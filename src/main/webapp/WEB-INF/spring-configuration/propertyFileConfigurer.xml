@@ -7,5 +7,6 @@
 
 
 	<context:property-placeholder location="file:/etc/cas/cas.properties"/>
+  <context:property-placeholder location="file:/etc/cas/ldap.properties"/>
 
 </beans>
