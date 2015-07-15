@@ -149,7 +149,7 @@
 
     <!-- LDAP Authentication Additions -->
 
-      <!--
+    <!--
        | Change principalIdAttribute to use another directory attribute,
        | e.g. userPrincipalName, for the NetID
        -->
@@ -214,14 +214,12 @@
           p:useStartTLS="${ldap.useStartTLS}"
           p:sslConfig-ref="sslConfig"/>
 
-    <!-- Temporarily removed - Kris 7/15/15
     <bean id="sslConfig" class="org.ldaptive.ssl.SslConfig">
         <property name="credentialConfig">
             <bean class="org.ldaptive.ssl.X509CredentialConfig"
                   p:trustCertificates="${ldap.trustedCert}" />
         </property>
     </bean>
-    -->
 
     <bean id="pruneStrategy" class="org.ldaptive.pool.IdlePruneStrategy"
           p:prunePeriod="${ldap.pool.prunePeriod}"
@@ -231,7 +229,7 @@
 
     <bean id="entryResolver"
           class="org.jasig.cas.authentication.support.UpnSearchEntryResolver"
-          p:baseDn="${ldap.authn.baseDn}" />
+          p:baseDn="${ldap.baseDn}" />
 
     <!-- End LDAP Additions -->
 
