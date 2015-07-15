@@ -233,7 +233,7 @@
 
     <bean id="entryResolver"
           class="org.jasig.cas.authentication.support.UpnSearchEntryResolver"
-          p:baseDn="${ldap.baseDn}" />
+          p:baseDn="${ldap.authn.baseDn}" />
 
     <!-- End LDAP Additions -->
 
