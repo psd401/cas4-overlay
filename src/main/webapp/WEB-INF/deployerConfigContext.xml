@@ -61,6 +61,7 @@
                    | set its name to something other than its default name (typically the simple class name).
                    -->
                 <entry key-ref="proxyAuthenticationHandler" value-ref="proxyPrincipalResolver" />
+		<entry key-ref="ldapAuthenticationHandler" value-ref="primaryPrincipalResolver" />
                 <entry key-ref="primaryAuthenticationHandler" value-ref="primaryPrincipalResolver" />
             </map>
         </constructor-arg>
@@ -86,6 +87,83 @@
             <bean class="org.jasig.cas.authentication.AnyAuthenticationPolicy" />
         </property>
     </bean>
+
+<bean id="ldapAuthenticationHandler"
+      class="org.jasig.cas.authentication.LdapAuthenticationHandler"
+      p:principalIdAttribute="sAMAccountName"
+      c:authenticator-ref="authenticator">
+    <property name="principalAttributeMap">
+        <map>
+            <!--
+                                | This map provides a simple attribute resolution mechanism.
+               | Keys are LDAP attribute names, values are CAS attribute names.
+               | Use this facility instead of a PrincipalResolver if LDAP is
+               | the only attribute source.
+               -->
+            <entry key="displayName" value="displayName" />
+            <entry key="mail" value="mail" />
+            <entry key="memberOf" value="memberOf" />
+	    <entry key="sAMAccountName" value="sAMAccountName" />
+	    <entry key="employeeId" value="employeeId" />
+	    <entry key="department" value="department" />
+	    <entry key="jobTitle" value="jobTitle" />
+	    <entry key="sn" value="sn" />
+	    <entry key="givenName" value="givenName" />
+        </map>
+    </property>
+</bean>
+
+<bean id="authenticator" class="org.ldaptive.auth.Authenticator"
+      c:resolver-ref="dnResolver"
+      c:handler-ref="authHandler"
+      p:entryResolver-ref="entryResolver" />
+
+<!-- Active Directory UPN format. -->
+<bean id="dnResolver"
+      class="org.ldaptive.auth.FormatDnResolver"
+      c:format="%s@${ldap.domain}" />
+
+<bean id="authHandler" class="org.ldaptive.auth.PooledBindAuthenticationHandler"
+      p:connectionFactory-ref="pooledLdapConnectionFactory" />
+
+<bean id="pooledLdapConnectionFactory"
+      class="org.ldaptive.pool.PooledConnectionFactory"
+      p:connectionPool-ref="connectionPool" />
+
+<bean id="connectionPool"
+      class="org.ldaptive.pool.BlockingConnectionPool"
+      init-method="initialize"
+      p:poolConfig-ref="ldapPoolConfig"
+      p:blockWaitTime="${ldap.pool.blockWaitTime}"
+      p:validator-ref="searchValidator"
+      p:pruneStrategy-ref="pruneStrategy"
+      p:connectionFactory-ref="connectionFactory" />
+
+<bean id="ldapPoolConfig" class="org.ldaptive.pool.PoolConfig"
+      p:minPoolSize="${ldap.pool.minSize}"
+      p:maxPoolSize="${ldap.pool.maxSize}"
+      p:validateOnCheckOut="${ldap.pool.validateOnCheckout}"
+      p:validatePeriodically="${ldap.pool.validatePeriodically}"
+      p:validatePeriod="${ldap.pool.validatePeriod}" />
+
+<bean id="connectionFactory" class="org.ldaptive.DefaultConnectionFactory"
+      p:connectionConfig-ref="connectionConfig" />
+
+<bean id="connectionConfig" class="org.ldaptive.ConnectionConfig"
+      p:ldapUrl="${ldap.url}"
+      p:connectTimeout="${ldap.connectTimeout}"
+      p:useStartTLS="false"/>
+
+<bean id="pruneStrategy" class="org.ldaptive.pool.IdlePruneStrategy"
+      p:prunePeriod="${ldap.pool.prunePeriod}"
+      p:idleTime="${ldap.pool.idleTime}" />
+
+<bean id="searchValidator" class="org.ldaptive.pool.SearchValidator" />
+
+<bean id="entryResolver"
+      class="org.jasig.cas.authentication.support.UpnSearchEntryResolver"
+      p:baseDn="${ldap.authn.baseDn}" />
+
 
     <!-- Required for proxy ticket mechanism. -->
     <bean id="proxyAuthenticationHandler"
@@ -137,6 +215,15 @@
         <entry key="uid" value="uid" />
         <entry key="eduPersonAffiliation" value="eduPersonAffiliation" />
         <entry key="groupMembership" value="groupMembership" />
+            <entry key="displayName" value="displayName" />
+            <entry key="mail" value="mail" />
+            <entry key="memberOf" value="memberOf" />
+            <entry key="sAMAccountName" value="sAMAccountName" />
+            <entry key="employeeId" value="employeeId" />
+            <entry key="department" value="department" />
+            <entry key="jobTitle" value="jobTitle" />
+            <entry key="sn" value="sn" />
+            <entry key="givenName" value="givenName" />
     </util:map>
 
     <!--
