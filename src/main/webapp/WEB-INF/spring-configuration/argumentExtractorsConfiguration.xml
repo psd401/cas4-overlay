@@ -43,4 +43,13 @@
 		<ref bean="samlArgumentExtractor" />
 		<ref bean="googleAccountsArgumentExtractor" />
  	</util:list>
+
+
+	<bean id="privateKeyFactoryBean" class="org.jasig.cas.util.PrivateKeyFactoryBean"
+	      p:location="classpath:private.p8"
+	      p:algorithm="RSA" />
+	
+	<bean id="publicKeyFactoryBean"	class="org.jasig.cas.util.PublicKeyFactoryBean"
+	      p:location="classpath:public.key"
+	      p:algorithm="RSA" />
 </beans>
