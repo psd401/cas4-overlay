@@ -53,6 +53,7 @@
       <util:list>
         <value>${cas.viewResolver.basename}</value>
         <value>protocol_views</value>
+	<value>saml_views</value>
       </util:list>
     </property>
   </bean>
