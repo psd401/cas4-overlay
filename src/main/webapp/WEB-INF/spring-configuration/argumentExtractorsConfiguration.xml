@@ -32,8 +32,7 @@
 	<bean id="samlArgumentExtractor" class="org.jasig.cas.support.saml.web.support.SamlArgumentExtractor" />
 	<bean id="googleAccountsArgumentExtractor" class="org.jasig.cas.support.saml.web.support.GoogleAccountsArgumentExtractor"
      		 p:privateKey-ref="privateKeyFactoryBean"
-     		 p:publicKey-ref="publicKeyFactoryBean"
-     		 p:httpClient-ref="httpClient" />
+     		 p:publicKey-ref="publicKeyFactoryBean" />
  	<bean
  		id="casArgumentExtractor"
  		class="org.jasig.cas.web.support.CasArgumentExtractor" />
