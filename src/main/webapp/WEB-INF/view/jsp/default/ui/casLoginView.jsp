@@ -32,7 +32,7 @@
 
     <form:errors path="*" id="msg" cssClass="errors" element="div" htmlEscape="false" />
   
-    <h2 class="form-signin-heading"><spring:message code="screen.welcome.instructions" /></h2>
+    <h2 class="form-signin-heading text-center"><spring:message code="screen.welcome.instructions" /></h2>
 
 
     <%--<section class="row">--%>

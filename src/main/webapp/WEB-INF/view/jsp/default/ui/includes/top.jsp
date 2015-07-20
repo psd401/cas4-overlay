@@ -31,7 +31,7 @@
 <head>
   <meta charset="UTF-8" />
 
-  <title>HotRod &#8211; Authentication</title>
+  <title>PSD Login</title>
   
   <%--<spring:theme code="standard.custom.css.file" var="customCssFile" />--%>
   <link rel="stylesheet" href="css/bootstrap.min.css" >
