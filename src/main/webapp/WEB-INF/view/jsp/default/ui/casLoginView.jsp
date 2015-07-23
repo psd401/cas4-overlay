@@ -44,7 +44,7 @@
 				<div class="psd-login-title">
 					<span class="psd-login-title-text">
 						<span class="hidden-xs">Sign in</span>
-						<span class="visible-xs hidden-sm hidden-md"><spring:message code="logo.title" /></span>
+						<span class="visible-xs hidden-sm hidden-md"><spring:message code="screen.welcome.instructions" /></span>
 					</span>
 				</div>
 				<div class="psd-login-form">
@@ -57,7 +57,7 @@
             
 					  <i class="fa fa-arrow-circle-right psd-login-submit psd-animate" data-placement="bottom" data-toggle="tooltip" title="Log in."></i>
             
-            <input class="submit-button" name="submit" accesskey="l" data-placement="bottom" data-toggle="tooltip" />" tabindex="4" type="submit" />
+            <input class="submit-button" name="submit" accesskey="l" data-placement="bottom" data-toggle="tooltip" tabindex="4" type="submit" />
 						<!--<div class="psd-login-form-button">Login</div>-->
 					</div>
 				</div>
