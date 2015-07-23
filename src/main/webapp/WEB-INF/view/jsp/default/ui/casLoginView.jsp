@@ -32,6 +32,10 @@
 <spring:message code="screen.welcome.label.netid.accesskey" var="userNameAccessKey" />
 <spring:message code="screen.welcome.label.password.accesskey" var="passwordAccessKey" />
 
+<input type="hidden" name="lt" value="${loginTicket}" />
+<input type="hidden" name="execution" value="${flowExecutionKey}" />
+<input type="hidden" name="_eventId" value="submit" />
+
 <div class="row psd-load-fade-3 psd-animate">
 	<div class="col-md-4"></div>
 	<div class="col-md-4">
