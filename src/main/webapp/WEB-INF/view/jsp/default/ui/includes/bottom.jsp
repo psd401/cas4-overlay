@@ -36,6 +36,8 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     
+	  <script src="js/cas.js" defer="defer"></script>
+    
     <%-- 
         JavaScript Debug: A simple wrapper for console.log 
         See this link for more info: http://benalman.com/projects/javascript-debug-console-log/

@@ -27,6 +27,77 @@
   </div>
 </c:if>
 
+
+<form:form class="form-signin" role="form" method="post" id="fm1" commandName="${commandName}" htmlEscape="true">
+<spring:message code="screen.welcome.label.netid.accesskey" var="userNameAccessKey" />
+<spring:message code="screen.welcome.label.password.accesskey" var="passwordAccessKey" />
+
+<div class="row psd-load-fade-3 psd-animate">
+	<div class="col-md-4"></div>
+	<div class="col-md-4">
+		<div class="psd-login text-center hidden-xs hidden-sm">
+			<div class="psd-login-title">
+				<span class="psd-login-title-text">
+					Sign in
+				</span>
+			</div>
+      
+			<div class="psd-login-form">
+				<div class="psd-login-form-inputs">
+          <form:input cssClass="required form-control psd-login-form-input input-lg" cssErrorClass="error" placeholder="Username" id="username" tabindex="1" accesskey="${userNameAccessKey}"  autocapitalize="off"
+                autocorrect="off" path="username" autocomplete="off" htmlEscape="true" />
+
+          <form:password cssClass="required form-control psd-login-form-input-password input-lg" cssErrorClass="error" placeholder="Password" id="password" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" />
+					<a href="http://iforgot.psd401.net/"><i class="fa fa-question-circle psd-login-forgot psd-animate" data-placement="bottom" data-toggle="tooltip" title="Forgot your password?"></i></a>
+          <input class="fa fa-arrow-circle-right psd-login-submit psd-animate" class="form-control" name="submit" accesskey="l" data-placement="bottom" data-toggle="tooltip" title="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
+					<!--<div class="psd-login-form-button">Login</div>-->
+				</div>
+			</div>
+		</div>
+		<div class="psd-login-tablet text-center hidden-xs hidden-md hidden-lg">
+			<div class="psd-login-title">
+				<span class="psd-login-title-text">
+					Sign in
+				</span>
+			</div>
+			<div class="psd-login-form">
+				<div class="psd-login-form-inputs">
+					<form:input cssClass="required form-control psd-login-form-input input-lg" cssErrorClass="error" placeholder="Username" id="username" tabindex="1" accesskey="${userNameAccessKey}"  autocapitalize="off"
+                autocorrect="off" path="username" autocomplete="off" htmlEscape="true" />
+					<form:password cssClass="required form-control psd-login-form-input-password input-lg" cssErrorClass="error" placeholder="Password" id="password" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" />
+					<a href="http://iforgot.psd401.net/"><i class="fa fa-question-circle psd-login-forgot psd-animate" data-placement="bottom" data-toggle="tooltip" title="Forgot your password?"></i></a>
+					<input class="fa fa-arrow-circle-right psd-login-submit psd-animate" class="form-control" name="submit" accesskey="l" data-placement="bottom" data-toggle="tooltip" title="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
+					<!--<div class="psd-login-form-button">Login</div>-->
+				</div>
+				<span>Login</span>
+			</div>
+		</div>
+    
+		<div class="psd-login-phone text-center hidden-sm hidden-md hidden-lg">
+			<div class="psd-login-title">
+				<span class="psd-login-title-text-phone">
+					<spring:message code="logo.title" />
+				</span>
+			</div>
+			<div class="psd-login-form-phone">
+				<div class="psd-login-form-inputs">
+          <form:input cssClass="required form-control psd-login-form-input-phone input-lg" cssErrorClass="error" placeholder="Username" id="username" tabindex="1" accesskey="${userNameAccessKey}"  autocapitalize="off"
+                autocorrect="off" path="username" autocomplete="off" htmlEscape="true" />
+          <form:password cssClass="required form-control psd-login-form-input-password-phone input-lg" cssErrorClass="error" placeholder="Password" id="password" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" />
+					
+					<a href="http://iforgot.psd401.net/"><i class="fa fa-question-circle psd-login-phone-forgot psd-animate" data-placement="bottom" data-toggle="tooltip" title="Forgot your password?"></i></a>
+          <input class="fa fa-arrow-circle-right psd-login-phone-submit psd-animate" class="form-control" name="submit" accesskey="l" data-placement="bottom" data-toggle="tooltip" title="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
+					<!--<div class="psd-login-form-button">Login</div>-->
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class="col-md-4"></div>
+</div>
+</form:form>
+
+
+<!--
 <%--<div class="box" id="login">--%>
   <form:form class="form-signin" role="form" method="post" id="fm1" commandName="${commandName}" htmlEscape="true">
 
@@ -77,6 +148,6 @@
     <%--</section>--%>
   </form:form>
 <%--</div>--%>
-  
+-->  
 
 <jsp:directive.include file="includes/bottom.jsp" />

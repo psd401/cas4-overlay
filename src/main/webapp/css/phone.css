@@ -1,0 +1,188 @@
+@media screen and (min-width: 320px) and (max-width: 540px) {
+	.psd-title {
+		width: 100%;
+		height: 25px;
+		text-align: center;
+		display: table;
+		background-color: #2E2E2E;	
+		border-top: 10px solid #006BAA;
+	}
+	
+	.psd-title-text {
+		display: inline-table;
+		font-size: 48px;
+		font-family: "Source Sans Pro", sans-serif;
+		font-weight: 100;
+		letter-spacing: 2px;
+		color: white;
+	}
+	
+	.psd-logo {
+		margin: 10%;
+		transform: scale(2.5, 2.5);
+	}
+	
+	.psd-forgot-logo {
+		max-height: 48px;
+		float: left;
+	}
+	
+	.psd-login-title {
+		text-align: center;
+		border-bottom: 5px solid #4BA2D9;
+		background-color: #2E2E2E;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+	}
+	
+	.psd-login-title-text {
+		margin-left: 1%;
+		font-size: 42px;
+		font-weight: 100;
+		color: white;
+		font-family: "Source Sans Pro", sans-serif;
+		margin-bottom: -1%;
+	}
+	
+	.psd-login-form-text {
+		font-size: 22px;
+		font-weight: 200;
+	}
+	
+	.psd-login-form {
+		padding-left: 5%;
+		padding-right: 5%;
+		padding-top: 2%;
+		background-color: rgba(75, 162, 217, 0.1);
+		padding-bottom: 2.5%;
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
+	
+	.psd-login-form-input {
+		display: block !important;
+		margin-right: auto;
+		margin-left: auto;
+		border: 0 !important;
+		border-radius: 30px !important;
+		text-align: center;
+		font-size: 24px !important;
+		font-weight: 400;
+		width: 75% !important;
+		margin-top: 2%;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+	
+	.psd-login-form-inputs {
+		margin-bottom: 2%;
+	}
+	
+	.psd-login-form-button {
+		font-family: Bebas;
+		font-size: 24px;
+		background-color: #3898D4;
+		color: white;
+		letter-spacing: 2px;
+		width: 25%;
+		left: 75%;
+		right: 0;
+		margin-top: 2.5%;
+		cursor: pointer;
+		position: relative;
+	}
+	
+	.psd-login-forgot {
+		font-size: 48px !important;
+		margin-top: -46px;
+		float: left;
+		cursor: pointer;
+	}
+	
+	.psd-login-submit {
+		font-size: 48px !important;
+		margin-top: -46px;
+		float: right;
+		cursor: pointer;
+	}
+	
+	.psd-info {
+		width: 80%;
+		margin-right: auto !important;
+		margin-left: auto !important;
+		height: 25%;
+		top: 12.5%;
+		position: relative;
+		text-align: center;
+	}
+	
+	.psd-section-district {
+		padding: 0 !important;
+		height: 100%;
+		background-color: rgba(74, 186, 110, 0.1);
+	}
+	
+	.psd-section-supt {
+		padding: 0 !important;
+		height: 100%;
+		background-color: rgba(240, 197, 21, 0.1);
+	}
+	
+	.psd-section-tech {
+		padding: 0 !important;
+		height: 100%;
+		background-color: rgba(232, 76, 61, 0.1);
+	}
+	
+	.psd-section-title-district {
+		padding-left: 1%;
+		font-size: 24px;
+		font-weight: 300;
+		color: white;
+		width: 100% !important;
+		border-bottom: 5px solid #4AB96E;
+		border-left: 1px solid #4AB96E;
+		background-color: #2E2E2E;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+	
+	.psd-section-title-supt {
+		padding-left: 1%;
+		font-size: 24px;
+		font-weight: 300;
+		color: white;
+		width: 100% !important;
+		border-bottom: 5px solid #F0C515;
+		border-left: 1px solid #F0C515;
+		background-color: #2E2E2E;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+	
+	.psd-section-title-tech {
+		padding-left: 1%;
+		font-size: 24px;
+		font-weight: 300;
+		color: white;
+		width: 100% !important;
+		border-bottom: 5px solid #E84C3D;
+		border-left: 1px solid #E84C3D;
+		background-color: #2E2E2E;
+		font-family: "Source Sans Pro", sans-serif;
+	}
+	
+	@font-face {
+		font-family: "Bebas";
+		src: url('./BebasNeue.otf');
+	}
+	
+	@font-face {
+		font-family: "Ikaros";
+		src: url('./Ikaros.otf');
+	}
+	
+	body {
+		height: 100%;
+		width: 100%;
+		overflow: hidden;
+	}
+
+}

@@ -34,8 +34,13 @@
   <title>PSD Login</title>
   
   <%--<spring:theme code="standard.custom.css.file" var="customCssFile" />--%>
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" href="css/signin.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/desktop.css"></link>
+  
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
   <link rel="icon" href="<c:url value="/favicon.ico" />" type="image/x-icon" />
 
@@ -45,6 +50,46 @@
   <![endif]-->
 </head>
 <body>
+  
+  <div class="row hidden-xs psd-animate psd-load-fade-1">
+		<div class="col-md-12 psd-title">
+			<span class="psd-title-text">
+				 <spring:message code="logo.title" />
+			</span>
+		</div> 
+	</div>
+	<div class="row hidden-xs hidden-sm hidden-md psd-load-fade-2 psd-animate">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 text-center">
+			<a href="http://www.psd401.net/"><img src="./svg/PSD.svg" class="psd-logo"></img></a>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row hidden-sm hidden-md hidden-lg psd-load-fade-2 psd-animate">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 text-center">
+			<a href="http://www.psd401.net/"><img src="./svg/PSD.svg" class="psd-logo-phone"></img></a>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row hidden-xs hidden-md hidden-lg psd-load-fade-2 psd-animate">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 text-center">
+			<a href="http://www.psd401.net/"><img src="./svg/PSD.svg" class="psd-logo-tablet"></img></a>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+	<div class="row hidden-xs hidden-sm hidden-lg psd-load-fade-2 psd-animate">
+		<div class="col-md-4"></div>
+		<div class="col-md-4 text-center">
+			<a href="http://www.psd401.net/"><img src="./svg/PSD.svg" class="psd-logo-tablet-md"></img></a>
+		</div>
+		<div class="col-md-4"></div>
+	</div>
+  
+  
+  
+<!--
 <%--<nav class="navbar navbar-default" role="navigation">--%>
 
     <%--<p><a href="/logout" onclick="ga('send', 'event');">Logout</a></p>--%>
@@ -56,3 +101,4 @@
         <%--<h1>Central Authentication Service (CAS)</h1>--%>
       </header>
       <div>
+-->
