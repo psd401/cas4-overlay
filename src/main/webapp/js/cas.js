@@ -59,4 +59,11 @@ var populateRSSFeeds = {
 $(document).ready(function(){
 	//populateRSSFeeds.init();
     $('[data-toggle="tooltip"]').tooltip();
+    
+    $('.psd-login-submit').tooltip('show');
+    $('.psd-login-forgot').tooltip('show');
+    
+    $('.psd-login-submit').click(function(){
+      $('form[name=login]').submit();
+    });
 });

@@ -244,6 +244,10 @@
     color: rgba(75, 162, 217, 1);
 }
 
+.submit-button {
+	display: none;
+}
+
 .psd-login-submit {
 	font-size: 48px !important;
 	margin-top: -46px;
@@ -276,6 +280,10 @@
 	padding: 0 !important;
 	height: 100%;
 	background-color: rgba(74, 186, 110, 0.1);
+}
+
+input[type="submit"] {
+    font-family: FontAwesome;
 }
 
 .psd-section-supt {
@@ -396,7 +404,6 @@ html, body {
 		margin-right: 5%;
 		margin-left: 5%;
 		margin-top: 5%;
-		
 	}
 	
 	.psd-logo {
