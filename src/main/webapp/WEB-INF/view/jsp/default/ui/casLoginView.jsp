@@ -48,7 +48,9 @@
 						<span class="visible-xs hidden-sm hidden-md"><spring:message code="screen.welcome.instructions" /></span>
 					</span>
 				</div>
+        
 				<div class="psd-login-form">
+          <form:errors path="*" id="msg" cssClass="errors" element="div" htmlEscape="false" />
 					<div class="psd-login-form-inputs">
             <form:input cssClass="required form-control psd-login-form-input input-lg" cssErrorClass="error" placeholder="Username" id="username" tabindex="1" accesskey="${userNameAccessKey}"  autocapitalize="off"
                 autocorrect="off" path="username" autocomplete="off" htmlEscape="true" />
