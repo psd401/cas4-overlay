@@ -65,7 +65,9 @@ $(document).ready(function(){
     
     $('.psd-login-submit').click(function(){
       var username = $('.psd-login-form-input').val();
-      $('.psd-login-form-input').val(username.substring(0, username.indexOf('@')));
+      if (username.indexOf("@") != -1) {
+            $('.psd-login-form-input').val(username.substring(0, username.indexOf('@')));
+        }
       $('form[name=login]').submit();
     });
     
@@ -73,7 +75,9 @@ $(document).ready(function(){
         if (event.which == 13) {
             event.preventDefault();
             var username = $('.psd-login-form-input').val();
-            $('.psd-login-form-input').val(username.substring(0, username.indexOf('@')));
+            if (username.indexOf("@") != -1) {
+                $('.psd-login-form-input').val(username.substring(0, username.indexOf('@')));
+            }
             $("form[name=login]").submit();
         }
     });
