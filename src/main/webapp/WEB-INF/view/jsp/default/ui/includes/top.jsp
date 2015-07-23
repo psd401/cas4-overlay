@@ -53,7 +53,7 @@
 <div class="row hidden-xs psd-animate psd-load-fade-1">
 	<div class="col-md-12 psd-title">
 		<span class="psd-title-text">
-			<spring:message code="logo.title" />
+			<spring:message code="logo.instructions" />
 		</span>
 	</div> 
 </div>

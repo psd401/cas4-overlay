@@ -44,7 +44,7 @@
 				<div class="psd-login-title">
 					<span class="psd-login-title-text">
 						<span class="hidden-xs">Sign in</span>
-						<span class="visible-xs hidden-sm hidden-md"><spring:message code="logo.title" /></span>
+						<span class="visible-xs hidden-sm hidden-md"><spring:message code="logo.instructions" /></span>
 					</span>
 				</div>
 				<div class="psd-login-form">
@@ -54,7 +54,7 @@
 
             <form:password cssClass="required form-control psd-login-form-input-password input-lg" cssErrorClass="error" placeholder="Password" id="password" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" />
 					  <a href="http://iforgot.psd401.net/"><i class="fa fa-question-circle psd-login-forgot psd-animate" data-placement="bottom" data-toggle="tooltip" title="Forgot your password?"></i></a>
-            <input class="fa fa-arrow-circle-right psd-login-submit psd-animate" class="form-control" name="submit" accesskey="l" data-placement="bottom" data-toggle="tooltip" title="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
+            <i class="fa fa-arrow-circle-right psd-login-submit psd-animate" class="form-control" name="submit" accesskey="l" data-placement="bottom" data-toggle="tooltip" title="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
 					
 						<!--<div class="psd-login-form-button">Login</div>-->
 					</div>
