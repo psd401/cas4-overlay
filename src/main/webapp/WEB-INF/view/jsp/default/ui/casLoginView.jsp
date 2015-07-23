@@ -39,6 +39,7 @@
 
 <div class="row psd-load-fade-3 psd-animate">
 		<div class="col-md-4"></div>
+    
 		<div class="col-md-4">
 			<div class="psd-login text-center">
 				<div class="psd-login-title">
@@ -57,12 +58,13 @@
             
 					  <i class="fa fa-arrow-circle-right psd-login-submit psd-animate" data-placement="bottom" data-toggle="tooltip" title="Log in."></i>
             
-            <input class="submit-button" name="submit" accesskey="l" data-placement="bottom" data-toggle="tooltip" tabindex="4" type="submit" />
+            
 						<!--<div class="psd-login-form-button">Login</div>-->
 					</div>
 				</div>
 			</div>
 		</div>	
+    
 		<div class="col-md-4"></div>
 	</div>
 
