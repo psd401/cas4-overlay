@@ -64,6 +64,17 @@ $(document).ready(function(){
     $('.psd-login-forgot').tooltip('show');
     
     $('.psd-login-submit').click(function(){
+      var username = $('.psd-login-form-input').val();
+      $('.psd-login-form-input').val(username.substring(0, username.indexOf('@')));
       $('form[name=login]').submit();
+    });
+    
+    $(".psd-login-form-input-password").keypress(function(event) {
+        if (event.which == 13) {
+            event.preventDefault();
+            var username = $('.psd-login-form-input').val();
+            $('.psd-login-form-input').val(username.substring(0, username.indexOf('@')));
+            $("form[name=login]").submit();
+        }
     });
 });
