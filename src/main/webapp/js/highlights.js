@@ -25,8 +25,8 @@ $(document).ready(function(){
     if($('#msg.errors').length > 0){
     
         $('#msg.errors').animate({ backgroundColor: 'rgb(75, 162, 217)' }, 30).animate({ backgroundColor: 'rgb(217, 75, 75)' }, 500);
-        $('.psd-login-title').animate({ "border-bottom": 'rgb(75, 162, 217)' }, 30).animate({ "border-bottom": 'rgb(217, 75, 75)' }, 500);
-        $(".psd-login-form").animate({ backgroundColor: 'rgba(75, 162, 217, 0.1)' }, 30).animate({ backgroundColor: 'rgba(217, 75, 75, 0.1)' }, 500);
+        $('.psd-login-title').animate({ "border-bottom": '0' }, 500);
+        $(".psd-login-form").animate({ backgroundColor: 'rgba(217, 75, 75, 0.1)' }, 500);
     }
     
     //flash success box
