@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 540px) {
+@media only screen and (min-width: 320px) and (max-width: 540px) {
 	.psd-title {
 		width: 100%;
 		height: 25px;

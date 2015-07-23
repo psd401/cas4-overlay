@@ -57,6 +57,6 @@ var populateRSSFeeds = {
 }
 
 $(document).ready(function(){
-	populateRSSFeeds.init();
+	//populateRSSFeeds.init();
     $('[data-toggle="tooltip"]').tooltip();
 });
