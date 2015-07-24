@@ -34,6 +34,7 @@
       <div class="psd-login-form">
         <p class="text-center psd-font psd-info"><spring:message code="screen.logout.success" /></p>
         <p class="text-center"><a href="https://psd401.net" class="btn btn-lg btn-primary">PSD Home</a>
+        <p class="text-center"><a href="/login" class="btn btn-lg btn-success">Login</a>
       </div>
     </div>
   </div>

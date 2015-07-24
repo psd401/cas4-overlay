@@ -153,12 +153,14 @@
 }
 
 .psd-logo {
-	margin: 65px;
+	margin: 70px;
 	transform: scale(2.5, 2.5);
 	-webkit-transform: scale(2.5, 2.5);
 }
 
-
+.tooltip.right .tooltip-inner {
+	margin-left: -1px;
+}
 
 .psd-forgot-logo {
 	max-height: 48px;
