@@ -60,8 +60,15 @@ $(document).ready(function(){
 	//populateRSSFeeds.init();
     $('[data-toggle="tooltip"]').tooltip();
     
-    $('.psd-login-submit').tooltip('show');
-    $('.psd-login-forgot').tooltip('show');
+    setTimeout(function(){
+        $('.psd-login-submit').tooltip('show');
+        $('.psd-login-forgot').tooltip('show');
+    }, 1200);
+    
+    setTimeout(function(){
+        $('.psd-login-submit').tooltip('hide');
+        $('.psd-login-forgot').tooltip('hide');
+    }, 7000);
     
     $('.psd-login-submit').click(function(){
       var username = $('.psd-login-form-input').val();
