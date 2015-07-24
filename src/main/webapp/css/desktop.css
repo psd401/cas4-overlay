@@ -216,6 +216,10 @@
     font-weight: 200;
     font-size: 18px;
 }
+
+.psd-info {
+	padding: 10px;
+}
 	
 
 .psd-login-form-input {

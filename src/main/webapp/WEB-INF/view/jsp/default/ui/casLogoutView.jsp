@@ -31,10 +31,10 @@
 					<spring:message code="screen.logout.header" />
 				</span>
 			</div>
-      
-      <span class="text-center psd-font"><spring:message code="screen.logout.success" /></span>
-      <p class="text-center"><a href="https://psd401.net" class="btn btn-lg btn-primary">PSD Home</a>
-      
+      <div class="psd-login-form">
+        <p class="text-center psd-font psd-info"><spring:message code="screen.logout.success" /></p>
+        <p class="text-center"><a href="https://psd401.net" class="btn btn-lg btn-primary">PSD Home</a>
+      </div>
     </div>
   </div>
 </div>

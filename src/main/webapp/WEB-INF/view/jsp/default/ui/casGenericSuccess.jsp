@@ -32,9 +32,10 @@
 					<spring:message code="screen.success.header" />
 				</span>
 			</div>
-      
-      <p class="text-center"><a href="http://my.psd401.net" class="btn btn-lg btn-primary">Visit your portal</a>
-      
+      <div class="psd-login-form">
+        <p class="text-center"><a href="http://my.psd401.net" class="btn btn-lg btn-primary">Visit your portal</a>
+        <p class="text-center"><a href="/logout" class="btn btn-lg btn-primary">Logout</a>
+      </div>
     </div>
   </div>
 </div>
