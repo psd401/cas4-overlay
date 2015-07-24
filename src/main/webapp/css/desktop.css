@@ -197,14 +197,25 @@
 	padding-bottom: 2.5%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	
+	transition: background-color 500ms;
+	-webkit-transition: background-color 500ms;
+	-moz-transition: background-color 500ms;
+	-ms-transition: background-color 500ms;
+}
+
+
+.psd-login-form.error {
+	background-color: rgba(217, 75, 75, 0.1);
 }
 
 
 
-
-
-
-
+.psd-font {
+	font-family: "Source Sans Pro";
+    font-weight: 200;
+    font-size: 18px;
+}
 	
 
 .psd-login-form-input {

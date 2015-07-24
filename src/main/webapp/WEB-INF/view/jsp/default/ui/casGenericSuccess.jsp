@@ -19,11 +19,24 @@
 
 --%>
 <jsp:directive.include file="includes/top.jsp" />
-  <div class="col-md-4"></div>
-  <div id="msg" class="message-display success col-md-4">
-    <h2 class="login-success text-center"><spring:message code="screen.success.header" /></h2>
-    <p class="text-center"><a href="http://my.psd401.net" class="btn btn-lg btn-primary">Visit your portal</a>
-  </div>
-   <div class="col-md-4"></div>
-<jsp:directive.include file="includes/bottom.jsp" />
 
+
+
+<div class="row psd-load-fade-3 psd-animate">
+	<div class="col-md-4"></div>
+  
+	<div class="col-md-4">
+		<div class="psd-login text-center">
+			<div class="psd-login-title">
+				<span class="psd-login-title-text">
+					<spring:message code="screen.success.header" />
+				</span>
+			</div>
+      
+      <p class="text-center"><a href="http://my.psd401.net" class="btn btn-lg btn-primary">Visit your portal</a>
+      
+    </div>
+  </div>
+</div>
+
+<jsp:directive.include file="includes/bottom.jsp" /> 

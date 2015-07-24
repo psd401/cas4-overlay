@@ -19,9 +19,27 @@
 
 --%>
 <jsp:directive.include file="includes/top.jsp" />
-  <div id="msg" class="success">
-    <h2><spring:message code="screen.logout.header" /></h2>
-    <p><spring:message code="screen.logout.success" /></p>
-    <p><spring:message code="screen.logout.security" /></p>
+  
+  
+<div class="row psd-load-fade-3 psd-animate">
+	<div class="col-md-4"></div>
+  
+	<div class="col-md-4">
+		<div class="psd-login text-center">
+			<div class="psd-login-title">
+				<span class="psd-login-title-text">
+					<spring:message code="screen.logout.header" />
+				</span>
+			</div>
+      
+      <span class="text-center psd-font"><spring:message code="screen.logout.success" /></span>
+      <p class="text-center"><a href="https://psd401.net" class="btn btn-lg btn-primary">PSD Home</a>
+      
+    </div>
   </div>
+</div>
+
+  
+  
+  
 <jsp:directive.include file="includes/bottom.jsp" />
