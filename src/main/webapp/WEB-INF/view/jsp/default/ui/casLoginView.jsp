@@ -43,10 +43,8 @@
 		<div class="col-md-4">
 			<div class="psd-login text-center">
 				<div class="psd-login-title">
-					<span class="psd-login-title-text">
-						<span class="hidden-xs">Sign in</span>
-						<span class="visible-xs hidden-sm hidden-md"><spring:message code="screen.welcome.instructions" /></span>
-					</span>
+					<span class="hidden-xs psd-login-title-text">Sign in</span>
+					<span class="visible-xs hidden-sm hidden-md psd-login-title-text"><spring:message code="screen.welcome.instructions" /></span>
 				</div>
         <form:errors path="*" id="msg" cssClass="errors" element="div" htmlEscape="false" />
 				<div class="psd-login-form">
