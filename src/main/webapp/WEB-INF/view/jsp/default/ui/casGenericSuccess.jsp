@@ -33,8 +33,10 @@
 				</span>
 			</div>
       <div class="psd-login-form">
-        <p class="text-center"><a href="http://my.psd401.net" class="btn btn-lg btn-primary">Visit your portal</a>
-        <p class="text-center"><a href="/logout" class="btn btn-lg btn-primary">Logout</a>
+        <p class="text-center">
+          <a href="http://my.psd401.net" class="btn btn-lg btn-primary">Visit your portal</a>
+          <a href="/logout" class="btn btn-lg btn-danger">Logout</a>
+        </p>
       </div>
     </div>
   </div>
