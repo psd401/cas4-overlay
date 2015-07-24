@@ -55,7 +55,7 @@
             <form:input cssClass="required form-control psd-login-form-input input-lg" cssErrorClass="error" placeholder="Username" id="username" tabindex="1" accesskey="${userNameAccessKey}"  autocapitalize="off"
                 autocorrect="off" path="username" autocomplete="off" htmlEscape="true" />
 
-            <form:password cssClass="required form-control psd-login-form-input-password input-lg" cssErrorClass="error" placeholder="Password" id="password" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" data-placement="right" data-trigger="manual" data-toggle="tooltip" title="Caps Lock is on" />
+            <form:password cssClass="required form-control psd-login-form-input-password input-lg" cssErrorClass="error" placeholder="Password" id="password" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" data-placement="right" data-trigger="manual" data-toggle="tooltip" title="Caps Lock!" />
 					  <a href="http://iforgot.psd401.net/"><i class="fa fa-question-circle psd-login-forgot psd-animate" data-placement="bottom" data-toggle="tooltip" title="Forgot your password?"></i></a>
             
 					  <i class="fa fa-arrow-circle-right psd-login-submit psd-animate" data-placement="bottom" data-toggle="tooltip" title="Log in."></i>

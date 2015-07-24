@@ -83,6 +83,17 @@ $(document).ready(function(){
         }
     });
     
+    if($(".logout-success").length > 0) {
+        var timer = 10;
+        setInterval(function(){
+            $(".logout-success").html("Login " + timer);
+            if(timer == 0){
+                window.location.href = "/login"
+            }
+            timer --;
+        }, 1000);
+    }
+    
     capsLock.observe(function (status) {
         if(status){
             $(".psd-login-form-input-password").tooltip("show");
