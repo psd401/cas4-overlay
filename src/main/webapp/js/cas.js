@@ -106,8 +106,9 @@ $(document).ready(function(){
 
 function stripEmail(){
     var username = $('.psd-login-form-input').val();
-    username = username.toLowerCase().replace(/ /gi, '');
+    username = username.toLowerCase().replace(/ /g, '');
     if (username.indexOf("@") != -1) {
-        $('.psd-login-form-input').val(username.substring(0, username.indexOf('@')));
+        username = username.substring(0, username.indexOf('@'));
     }
+    $('.psd-login-form-input').val(username);
 }
