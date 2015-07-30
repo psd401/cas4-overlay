@@ -88,7 +88,7 @@ $(document).ready(function(){
         setInterval(function(){
             $(".logout-success").html("Login " + timer);
             if(timer == 0){
-                window.location.href = "/login"
+                window.location.href = "/login?service=http%3A%2F%2Fmy.psd401.net"
             }
             timer --;
         }, 1000);
@@ -106,7 +106,7 @@ $(document).ready(function(){
 
 function stripEmail(){
     var username = $('.psd-login-form-input').val();
-    username = username.toLowerCase();
+    username = username.toLowerCase().replace(/ /gi, '');
     if (username.indexOf("@") != -1) {
         $('.psd-login-form-input').val(username.substring(0, username.indexOf('@')));
     }

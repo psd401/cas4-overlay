@@ -1,36 +1,12 @@
-
-
 @-webkit-keyframes psdFadeAfterLoad {
-    0% {
-		opacity: 0;
-	}
+    0% {opacity: 0;}
     100% {
 		opacity: 1;
 	}
 } 
 
 @-moz-keyframes psdFadeAfterLoad {
-    0% {
-		opacity: 0;
-	}
-    100% {
-		opacity: 1;
-	}
-} 
-
-@-ms-keyframes psdFadeAfterLoad {
-    0% {
-		opacity: 0;
-	}
-    100% {
-		opacity: 1;
-	}
-} 
-
-@keyframes psdFadeAfterLoad {
-    0% {
-		opacity: 0;
-	}
+    0% {opacity: 0;}
     100% {
 		opacity: 1;
 	}
@@ -41,15 +17,11 @@
 		opacity: 0;
 		-webkit-transform: scale(2.2);
 		-moz-transform: scale(2.2);
-		-ms-transform: scale(2.2);
-		transform: scale(2.2);
 	}
     100% {
 		opacity: 1;
 		-webkit-transform: scale(2.5);
 		-moz-transform: scale(2.5);
-		-ms-transform: scale(2.5);
-		transform: scale(2.5);
 	}
 } 
 
@@ -58,49 +30,11 @@
 		opacity: 0;
 		-webkit-transform: scale(2.2);
 		-moz-transform: scale(2.2);
-		-ms-transform: scale(2.2);
-		transform: scale(2.2);
 	}
     100% {
 		opacity: 1;
 		-webkit-transform: scale(2.5);
 		-moz-transform: scale(2.5);
-		-ms-transform: scale(2.5);
-		transform: scale(2.5);
-	}
-} 
-
-@-ms-keyframes psdScaleAndFadeAfterLoad {
-    0% {
-		opacity: 0;
-		-webkit-transform: scale(2.2);
-		-moz-transform: scale(2.2);
-		-ms-transform: scale(2.2);
-		transform: scale(2.2);
-	}
-    100% {
-		opacity: 1;
-		-webkit-transform: scale(2.5);
-		-moz-transform: scale(2.5);
-		-ms-transform: scale(2.5);
-		transform: scale(2.5);
-	}
-} 
-
-@keyframes psdScaleAndFadeAfterLoad {
-    0% {
-		opacity: 0;
-		-webkit-transform: scale(2.2);
-		-moz-transform: scale(2.2);
-		-ms-transform: scale(2.2);
-		transform: scale(2.2);
-	}
-    100% {
-		opacity: 1;
-		-webkit-transform: scale(2.5);
-		-moz-transform: scale(2.5);
-		-ms-transform: scale(2.5);
-		transform: scale(2.5);
 	}
 } 
 
@@ -109,49 +43,11 @@
 		opacity: 0;
 		-webkit-transform: translateY(30px);
 		-moz-transform: translateY(30px);
-		-ms-transform: translateY(30px);
-		transform: translateY(30px);
 	}
     100% {
 		opacity: 1;
 		-webkit-transform: translateY(0px);
-		-moz-transform: translateY(0px);
-		-ms-transform: translateY(0px);
-		transform: translateY(0px);
-	}
-} 
-
-@-ms-keyframes psdMoveAndFadeAfterLoad {
-    0% {
-		opacity: 0;
-		-webkit-transform: translateY(30px);
 		-moz-transform: translateY(30px);
-		-ms-transform: translateY(30px);
-		transform: translateY(30px);
-	}
-    100% {
-		opacity: 1;
-		-webkit-transform: translateY(0px);
-		-moz-transform: translateY(0px);
-		-ms-transform: translateY(0px);
-		transform: translateY(0px);
-	}
-} 
-
-@keyframes psdMoveAndFadeAfterLoad {
-    0% {
-		opacity: 0;
-		-webkit-transform: translateY(30px);
-		-moz-transform: translateY(30px);
-		-ms-transform: translateY(30px);
-		transform: translateY(30px);
-	}
-    100% {
-		opacity: 1;
-		-webkit-transform: translateY(0px);
-		-moz-transform: translateY(0px);
-		-ms-transform: translateY(0px);
-		transform: translateY(0px);
 	}
 } 
 
@@ -160,32 +56,26 @@
 		opacity: 0;
 		-webkit-transform: translateY(30px);
 		-moz-transform: translateY(30px);
-		-ms-transform: translateY(30px);
-		transform: translateY(30px);
 	}
     100% {
 		opacity: 1;
 		-webkit-transform: translateY(0px);
 		-moz-transform: translateY(0px);
-		-ms-transform: translateY(0px);
-		transform: translateY(0px);
 	}
 } 
 
-.submit-button {
-	display: none;
+span {
+	cursor: default;
 }
 
 .psd-animate {
 	-webkit-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	   -moz-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); 
-	   -ms-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	     -o-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	        transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
 	
 	-webkit-transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	   -moz-transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); 
-	   -ms-transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	     -o-transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	        transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
 }
@@ -198,12 +88,6 @@
 	-webkit-animation: psdFadeAfterLoad 500ms 1;
 	-webkit-animation-delay: 250ms;
 	-webkit-animation-fill-mode: forwards;
-	-ms-animation: psdFadeAfterLoad 500ms 1;
-	-ms-animation-delay: 250ms;
-	-ms-animation-fill-mode: forwards;
-	animation: psdFadeAfterLoad 500ms 1;
-	animation-delay: 250ms;
-	animation-fill-mode: forwards;
 }
 
 .psd-load-fade-2 {
@@ -214,12 +98,6 @@
 	-webkit-animation: psdFadeAfterLoad 500ms 1;
 	-webkit-animation-delay: 500ms;
 	-webkit-animation-fill-mode: forwards;
-	-ms-animation: psdFadeAfterLoad 500ms 1;
-	-ms-animation-delay: 500ms;
-	-ms-animation-fill-mode: forwards;
-	animation: psdFadeAfterLoad 500ms 1;
-	animation-delay: 500ms;
-	animation-fill-mode: forwards;
 }
 
 .psd-load-fade-3 {
@@ -231,19 +109,6 @@
 	-webkit-animation: psdMoveAndFadeAfterLoad 500ms 1;
 	-webkit-animation-delay: 750ms;
 	-webkit-animation-fill-mode: forwards;
-	-ms-animation: psdMoveAndFadeAfterLoad 500ms 1;
-	-ms-animation-delay: 750ms;
-	-ms-animation-fill-mode: forwards;
-	animation: psdMoveAndFadeAfterLoad 500ms 1;
-	animation-delay: 750ms;
-	animation-fill-mode: forwards;
-}
-
-#msg.errors {
-	color: white;
-    font-family: "Source Sans Pro";
-    font-weight: 200;
-    font-size: 18px;
 }
 
 .psd-title {
@@ -281,14 +146,12 @@
 }
 
 .psd-logo {
-	margin: 70px;
+	margin: 65px;
 	transform: scale(2.5, 2.5);
 	-webkit-transform: scale(2.5, 2.5);
 }
 
-.tooltip.right .tooltip-inner {
-	margin-left: -1px;
-}
+
 
 .psd-forgot-logo {
 	max-height: 48px;
@@ -327,30 +190,13 @@
 	padding-bottom: 2.5%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-	
-	transition: background-color 500ms;
-	-webkit-transition: background-color 500ms;
-	-moz-transition: background-color 500ms;
-	-ms-transition: background-color 500ms;
 }
 
-
-.psd-login-form.error {
-	background-color: rgba(217, 75, 75, 0.1);
-}
-
-
-
-.psd-font {
-	font-family: "Source Sans Pro";
-    font-weight: 200;
-    font-size: 18px;
-}
-
-.psd-info {
-	padding: 10px;
-}
-	
+.psd-link-logo {
+	max-height: 150px;
+	margin-top: 20px;
+	max-width: 70%;
+}	
 
 .psd-login-form-input {
 	display: block !important;
@@ -361,7 +207,7 @@
 	text-align: center;
 	font-size: 24px !important;
 	font-weight: 400;
-	width: 90% !important;
+	width: 80% !important;
 	margin-top: 2%;
 	font-family: "Source Sans Pro", sans-serif;
 	z-index: 1;
@@ -391,7 +237,7 @@
 	float: left;
 	cursor: pointer;
 	z-index: 2;
-	margin-left: 5.5%;
+	margin-left: -3.5%;
 	color: #333;
 }
 
@@ -400,13 +246,21 @@
     color: rgba(75, 162, 217, 1);
 }
 
+.psd-link-logo:hover {
+	transform: scale(1.2);
+}
+
+.submit-button {
+	display: none;
+}
+
 .psd-login-submit {
 	font-size: 48px !important;
 	margin-top: -46px;
 	float: right;
 	cursor: pointer;
 	z-index: 2;
-	margin-right: 5.5%;
+	margin-right: -3.5%;
 }
 
 .psd-login-submit:hover {
@@ -416,6 +270,10 @@
 
 .tooltip-inner {
 	border-radius: 20px;
+}
+
+.tooltip.right .tooltip-inner {
+	margin-left: -1px;
 }
 
 .psd-info {
@@ -428,22 +286,36 @@
 	text-align: center;
 }
 
-.psd-section-district {
+.psd-section-blog {
 	padding: 0 !important;
 	height: 100%;
-	background-color: rgba(74, 186, 110, 0.1);
+	/*background-color: rgba(74, 186, 110, 0.1);*/
+	border-right: 1px solid rgba(75, 162, 217, 0.1);
 }
 
-.psd-section-supt {
-	padding: 0 !important;
-	height: 100%;
-	background-color: rgba(240, 197, 21, 0.1);
+input[type="submit"] {
+    font-family: FontAwesome;
 }
 
-.psd-section-tech {
+.psd-section-tweet {
 	padding: 0 !important;
 	height: 100%;
-	background-color: rgba(232, 76, 61, 0.1);
+	border-right: 1px solid rgba(75, 162, 217, 0.1);
+	/*background-color: rgba(55, 152, 212, 0.1);*/
+}
+
+.psd-section-ticket {
+	padding: 0 !important;
+	height: 100%;
+	/*background-color: rgba(242, 156, 31, 0.1);*/
+}
+
+.psd-section-desc {
+	display: block;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 28px;
+	font-weight: 200;
+	margin-top: 10px;
 }
 
 .psd-section-title-district {
@@ -514,7 +386,7 @@ html, body {
 	text-align: center;
 	font-size: 24px !important;
 	font-weight: 400;
-	width: 90% !important;
+	width: 80% !important;
 	margin-top: 2%;
 	font-family: "Source Sans Pro", sans-serif;
 	z-index: 1;
@@ -552,7 +424,6 @@ html, body {
 		margin-right: 5%;
 		margin-left: 5%;
 		margin-top: 5%;
-		
 	}
 	
 	.psd-logo {
@@ -624,6 +495,10 @@ html, body {
 		margin-left: 7.5%; 
 		z-index: 2;
 	}
+	
+	.psd-section-desc {
+		font-size: 14px;	
+	}
 }
 
 @media only screen and (orientation: landscape)  and (min-width: 320px) and (max-width: 540px) {
@@ -655,3 +530,5 @@ html, body {
 	-ms-user-select: none;
 	user-select: none;
 }
+
+

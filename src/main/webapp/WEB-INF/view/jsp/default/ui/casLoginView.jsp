@@ -67,61 +67,25 @@
     
 		<div class="col-md-4"></div>
 	</div>
+  
+  <div class="row psd-info psd-load-fade-1 psd-animate">
+		<div class="col-xs-4 psd-section-blog">
+			<a href="http://techblog.psd401.net/"><img src="./svg/Blog.svg" class="psd-link-logo psd-animate"></img></a>
+			<span class="psd-section-desc">Visit the Tech Blog</span>
+		</div>
+		
+
+		<div class="col-xs-4 psd-section-tweet">
+			<a href="https://twitter.com/psd401"><img src="./svg/Twitter.svg" class="psd-link-logo psd-animate"></img></a>
+			<span class="psd-section-desc">Tweet Us @psd401</span>
+		</div>
+		
+		<div class="col-xs-4 psd-section-ticket">
+			<a href="http://workorders.psd401.net/"><img src="./svg/Ticket.svg" class="psd-link-logo psd-animate"></img></a>
+			<span class="psd-section-desc">Submit a Ticket</span>
+		</div>
+	</div>
 
 </form:form>
-
-
-<!--
-<%--<div class="box" id="login">--%>
-  <form:form class="form-signin" role="form" method="post" id="fm1" commandName="${commandName}" htmlEscape="true">
-
-    <form:errors path="*" id="msg" cssClass="errors" element="div" htmlEscape="false" />
-  
-    <h2 class="form-signin-heading text-center"><spring:message code="screen.welcome.instructions" /></h2>
-
-
-    <%--<section class="row">--%>
-      <%--<label for="username"><spring:message code="screen.welcome.label.netid" /></label>--%>
-      <%--<c:choose>--%>
-        <%--<c:when test="${not empty sessionScope.openIdLocalId}">--%>
-          <%--<strong>${sessionScope.openIdLocalId}</strong>--%>
-          <%--<input class="form-control" type="hidden" id="username" name="username" value="${sessionScope.openIdLocalId}" />--%>
-        <%--</c:when>--%>
-        <%--<c:otherwise>--%>
-          <spring:message code="screen.welcome.label.netid.accesskey" var="userNameAccessKey" />
-          <form:input cssClass="required form-control" cssErrorClass="error" placeholder="Username" id="username" size="25" tabindex="1" accesskey="${userNameAccessKey}" path="username" autocomplete="off" htmlEscape="true" />
-        <%--</c:otherwise>--%>
-      <%--</c:choose>--%>
-    <%--</section>--%>
-    <%----%>
-    <%--<section class="row">--%>
-      <%--<label for="password"><spring:message code="screen.welcome.label.password" /></label>--%>
-      <%--
-      NOTE: Certain browsers will offer the option of caching passwords for a user.  There is a non-standard attribute,
-      "autocomplete" that when set to "off" will tell certain browsers not to prompt to cache credentials.  For more
-      information, see the following web page:
-      http://www.technofundo.com/tech/web/ie_autocomplete.html
-      --%>
-      <spring:message code="screen.welcome.label.password.accesskey" var="passwordAccessKey" />
-      <form:password cssClass="required form-control" cssErrorClass="error" placeholder="Password" id="password" size="25" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" />
-    <%--</section>--%>
-    
-    <%--<section class="row check">--%>
-      <%--<input id="warn" name="warn" value="true" tabindex="3" accesskey="<spring:message code="screen.welcome.label.warn.accesskey" />" type="checkbox" />--%>
-      <%--<label for="warn"><spring:message code="screen.welcome.label.warn" /></label>--%>
-    <%--</section>--%>
-    
-    <%--<section class="row btn-row">--%>
-      <input type="hidden" name="lt" value="${loginTicket}" />
-      <input type="hidden" name="execution" value="${flowExecutionKey}" />
-      <input type="hidden" name="_eventId" value="submit" />
-      <%--<p>--%>
-      <input class="btn btn-sm btn-primary" class="form-control" name="submit" accesskey="l" value="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
-      <input class="btn btn-sm btn-primary" class="form-control" name="reset" accesskey="c" value="<spring:message code="screen.welcome.button.clear" />" tabindex="5" type="reset" />
-      <%--</p>--%>
-    <%--</section>--%>
-  </form:form>
-<%--</div>--%>
--->  
 
 <jsp:directive.include file="includes/bottom.jsp" />
