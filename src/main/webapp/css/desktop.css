@@ -370,6 +370,11 @@ input[type="submit"] {
 }
 
 
+.form-invalid {
+	color: white;
+	font-family: "Source Sans Pro", sans-serif;
+}
+
 @font-face {
 	font-family: "Bebas";
 	src: url('./BebasNeue.otf');
