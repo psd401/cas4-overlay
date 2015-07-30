@@ -46,7 +46,7 @@
 					<span class="hidden-xs psd-login-title-text">Sign in</span>
 					<span class="visible-xs hidden-sm hidden-md psd-login-title-text"><spring:message code="screen.welcome.instructions" /></span>
 				</div>
-        <form:errors path="*" id="msg" cssClass="errors" element="div" htmlEscape="false" />
+        		<form:errors path="*" id="msg" cssClass="errors form-invalid" element="div" htmlEscape="false" />
 				<div class="psd-login-form">
           
 					<div class="psd-login-form-inputs">
@@ -70,18 +70,18 @@
   
   <div class="row psd-info psd-load-fade-1 psd-animate">
 		<div class="col-xs-4 psd-section-blog psd-load-fade-2">
-			<a href="http://techblog.psd401.net/"><img src="./svg/Blog.svg" class="psd-link-logo psd-animate"></img></a>
+			<a href="http://techblog.psd401.net/" target="_blank"><img src="./svg/Blog.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Visit the Tech Blog</span>
 		</div>
 		
 
 		<div class="col-xs-4 psd-section-tweet psd-load-fade-2">
-			<a href="https://twitter.com/psd401"><img src="./svg/Twitter.svg" class="psd-link-logo psd-animate"></img></a>
+			<a href="https://twitter.com/psd401" target="_blank"><img src="./svg/Twitter.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Tweet Us @psd401</span>
 		</div>
 		
 		<div class="col-xs-4 psd-section-ticket psd-load-fade-2">
-			<a href="http://workorders.psd401.net/"><img src="./svg/Ticket.svg" class="psd-link-logo psd-animate"></img></a>
+			<a href="http://workorders.psd401.net/" target="_blank"><img src="./svg/Ticket.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Submit a Ticket</span>
 		</div>
 	</div>

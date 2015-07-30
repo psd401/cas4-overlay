@@ -134,7 +134,7 @@ span {
 	width: 75%;
 	margin-right: auto;
 	margin-left: auto;	
-	min-width: 300px;
+	min-width: 355px;
 }
 
 .psd-title {
@@ -439,6 +439,7 @@ html, body {
 		margin-right: 5%;
 		margin-left: 5%;
 		margin-top: 5%;
+		min-width: 320px;
 	}
 	
 	.psd-logo {
