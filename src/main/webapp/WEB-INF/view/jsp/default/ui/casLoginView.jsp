@@ -37,7 +37,7 @@
 <input type="hidden" name="_eventId" value="submit" />
 
 
-<div class="row psd-load-fade-3 psd-animate">
+<div class="row psd-load-fadeup-1 psd-animate">
 		<div class="col-md-4"></div>
     
 		<div class="col-md-4">
@@ -69,18 +69,18 @@
 	</div>
   
   <div class="row psd-info psd-load-fade-1 psd-animate">
-		<div class="col-xs-4 psd-section-blog">
+		<div class="col-xs-4 psd-section-blog psd-load-fade-1">
 			<a href="http://techblog.psd401.net/"><img src="./svg/Blog.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Visit the Tech Blog</span>
 		</div>
 		
 
-		<div class="col-xs-4 psd-section-tweet">
+		<div class="col-xs-4 psd-section-tweet psd-load-fade-2">
 			<a href="https://twitter.com/psd401"><img src="./svg/Twitter.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Tweet Us @psd401</span>
 		</div>
 		
-		<div class="col-xs-4 psd-section-ticket">
+		<div class="col-xs-4 psd-section-ticket psd-load-fade-3">
 			<a href="http://workorders.psd401.net/"><img src="./svg/Ticket.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Submit a Ticket</span>
 		</div>

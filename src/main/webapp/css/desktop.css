@@ -101,6 +101,16 @@ span {
 }
 
 .psd-load-fade-3 {
+	opacity: 0;
+	-moz-animation: psdFadeAfterLoad 500ms 1;
+	-moz-animation-delay: 750ms;
+	-moz-animation-fill-mode: forwards;
+	-webkit-animation: psdFadeAfterLoad 500ms 1;
+	-webkit-animation-delay: 750ms;
+	-webkit-animation-fill-mode: forwards;
+}
+
+.psd-load-fadeup-1 {
 	transform: translateY(30px);
 	opacity: 0;
 	-moz-animation: psdMoveAndFadeAfterLoad 500ms 1;
@@ -498,7 +508,7 @@ html, body {
 	}
 	
 	.psd-section-desc {
-		font-size: 14px;	
+		font-size: 16px;	
 	}
 }
 
