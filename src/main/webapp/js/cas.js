@@ -75,6 +75,12 @@ $(document).ready(function(){
       $('form[name=login]').submit();
     });
     
+    $(".psd-login-form-input").keypress(function(event){
+        if(event.which == 13){
+            $(".psd-login-form-input-password").focus();
+        }
+    });
+    
     $(".psd-login-form-input-password").keypress(function(event) {
         if (event.which == 13) {
             event.preventDefault();
