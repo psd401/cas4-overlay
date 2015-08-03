@@ -1,3 +1,10 @@
+@-ms-keyframes psdFadeAfterLoad {
+    0% {opacity: 0;}
+    100% {
+		opacity: 1;
+	}
+} 
+
 @-webkit-keyframes psdFadeAfterLoad {
     0% {opacity: 0;}
     100% {
@@ -12,15 +19,24 @@
 	}
 } 
 
+@-ms-keyframes psdScaleAndFadeAfterLoad {
+    0% {
+		opacity: 0;
+		-ms-transform: scale(2.2);
+	}
+    100% {
+		opacity: 1;
+		-ms-transform: scale(2.5);
+	}
+} 
+
 @-moz-keyframes psdScaleAndFadeAfterLoad {
     0% {
 		opacity: 0;
-		-webkit-transform: scale(2.2);
 		-moz-transform: scale(2.2);
 	}
     100% {
 		opacity: 1;
-		-webkit-transform: scale(2.5);
 		-moz-transform: scale(2.5);
 	}
 } 
@@ -29,25 +45,32 @@
     0% {
 		opacity: 0;
 		-webkit-transform: scale(2.2);
-		-moz-transform: scale(2.2);
 	}
     100% {
 		opacity: 1;
 		-webkit-transform: scale(2.5);
-		-moz-transform: scale(2.5);
+	}
+} 
+
+@-ms-keyframes psdMoveAndFadeAfterLoad {
+    0% {
+		opacity: 0;
+		-ms-transform: translateY(30px);
+	}
+    100% {
+		opacity: 1;
+		-ms-transform: translateY(0px);
 	}
 } 
 
 @-moz-keyframes psdMoveAndFadeAfterLoad {
     0% {
 		opacity: 0;
-		-webkit-transform: translateY(30px);
 		-moz-transform: translateY(30px);
 	}
     100% {
 		opacity: 1;
-		-webkit-transform: translateY(0px);
-		-moz-transform: translateY(30px);
+		-moz-transform: translateY(0px);
 	}
 } 
 
@@ -55,12 +78,10 @@
     0% {
 		opacity: 0;
 		-webkit-transform: translateY(30px);
-		-moz-transform: translateY(30px);
 	}
     100% {
 		opacity: 1;
 		-webkit-transform: translateY(0px);
-		-moz-transform: translateY(0px);
 	}
 } 
 
@@ -69,12 +90,14 @@ span {
 }
 
 .psd-animate {
-	-webkit-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); 
+	-webkit-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);
+	-ms-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000);  
 	   -moz-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	     -o-transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	        transition: all 500ms cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
 	
 	-webkit-transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); 
+	-ms-transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	   -moz-transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	     -o-transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); 
 	        transition-timing-function: cubic-bezier(0.075, 0.820, 0.165, 1.000); /* easeOutCirc */
@@ -82,6 +105,9 @@ span {
 
 .psd-load-fade-1 {
 	opacity: 0;
+	-ms-animation: psdFadeAfterLoad 500ms 1;
+	-ms-animation-delay: 250ms;
+	-ms-animation-fill-mode: forwards;
 	-moz-animation: psdFadeAfterLoad 500ms 1;
 	-moz-animation-delay: 250ms;
 	-moz-animation-fill-mode: forwards;
@@ -92,6 +118,9 @@ span {
 
 .psd-load-fade-2 {
 	opacity: 0;
+	-ms-animation: psdFadeAfterLoad 500ms 1;
+	-ms-animation-delay: 500ms;
+	-ms-animation-fill-mode: forwards;
 	-moz-animation: psdFadeAfterLoad 500ms 1;
 	-moz-animation-delay: 500ms;
 	-moz-animation-fill-mode: forwards;
@@ -100,8 +129,12 @@ span {
 	-webkit-animation-fill-mode: forwards;
 }
 
+
 .psd-load-fade-3 {
 	opacity: 0;
+	-ms-animation: psdFadeAfterLoad 500ms 1;
+	-ms-animation-delay: 750ms;
+	-ms-animation-fill-mode: forwards;
 	-moz-animation: psdFadeAfterLoad 500ms 1;
 	-moz-animation-delay: 750ms;
 	-moz-animation-fill-mode: forwards;
@@ -113,6 +146,9 @@ span {
 .psd-load-fadeup-1 {
 	transform: translateY(30px);
 	opacity: 0;
+	-ms-animation: psdMoveAndFadeAfterLoad 500ms 1;
+	-ms-animation-delay: 750ms;
+	-ms-animation-fill-mode: forwards;
 	-moz-animation: psdMoveAndFadeAfterLoad 500ms 1;
 	-moz-animation-delay: 750ms;
 	-moz-animation-fill-mode: forwards;
