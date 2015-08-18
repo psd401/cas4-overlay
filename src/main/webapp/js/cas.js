@@ -91,8 +91,8 @@ $(document).ready(function(){
     
     if($(".logout-success").length > 0) {
         var timer = 10;
-	var redirect = location.search.split('url=')[1] ? location.search.split('url=')[1] : '/login?service=http%3A%2F%2Fmy.psd401.net';
-        $(".logout-success").attr("href", decodeURI(redirect));
+	var redirect = decodeURIComponent(location.search.split('url=')[1] ? location.search.split('url=')[1] : '/login?service=http%3A%2F%2Fmy.psd401.net');
+        $(".logout-success").attr("href", redirect);
         setInterval(function(){
             $(".logout-success").html("Login " + timer);
             if(timer == 0){
