@@ -91,7 +91,8 @@ $(document).ready(function(){
     
     if($(".logout-success").length > 0) {
         var timer = 10;
-	var redirect = decodeURIComponent(encodeURI(location.search.split('url=')[1] ? location.search.split('url=')[1] : '/login?service=http%3A%2F%2Fmy.psd401.net'));
+	var redirect = location.search.split('service=')[1] ? "/login?service=" + location.search.split('service=')[1] : '/login?service=http%3A%2F%2Fmy.psd401.net';
+        console.log("Redirecting to " + redirect);
         $(".logout-success").attr("href", redirect);
         setInterval(function(){
             $(".logout-success").html("Login " + timer);
