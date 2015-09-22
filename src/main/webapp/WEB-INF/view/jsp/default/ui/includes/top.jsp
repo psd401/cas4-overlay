@@ -59,7 +59,7 @@
 </div>
 <div class="row psd-load-fade-2 psd-animate">
 	<div class="col-md-4"></div>
-	<div class="col-md-4 text-center">
+	<div class="col-md-4 text-center psd-logo-container">
     <!--[if gte IE 9]>
 		  <a href="http://www.psd401.net/"><img src="/svg/PSD.svg" class="psd-logo"></img></a>
     <![endif]-->
