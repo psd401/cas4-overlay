@@ -38,7 +38,7 @@
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
    <!--[if IE 7]>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome-ie7.min.css">
+    <link rel="stylesheet" href="css/font-awesome-ie7.css"></link>
    <![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/desktop.css"></link>
   <!--[if lt IE 9]>
