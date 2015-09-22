@@ -65,7 +65,10 @@
     <![endif]-->
     <!--[if lt IE 9]>
       <a href="http://www.psd401.net/"><img src="/svg/PSD.png" class="psd-logo"></img></a>
-    <![endif]
+    <![endif]-->
+    <![if !IE]>
+      <a href="http://www.psd401.net/"><img src="/svg/PSD.svg" class="psd-logo"></img></a>
+    <![endif]>
 	</div>
 	<div class="col-md-4"></div>
 </div>
