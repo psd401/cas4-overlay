@@ -58,8 +58,9 @@
             
 					  <i class="fa fa-arrow-circle-right psd-login-submit psd-animate" data-placement="bottom" data-toggle="tooltip" title="Log in."></i>
             
-            
-						<!--<div class="psd-login-form-button">Login</div>-->
+            			<!--[if IE 7]>
+							<input class="btn-submit" name="submit" accesskey="l" value="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
+						<[endif]-->
 					</div>
 				</div>
 			</div>
