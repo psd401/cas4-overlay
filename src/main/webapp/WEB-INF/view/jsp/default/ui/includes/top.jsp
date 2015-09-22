@@ -37,7 +37,13 @@
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.min.css" >
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+   <!--[if IE 7]>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome-ie7.min.css">
+   <![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/desktop.css"></link>
+  <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ieold.css"></link>
+  <[endif]-->
   
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -58,7 +64,7 @@
 	</div> 
 </div>
 <div class="row psd-load-fade-2 psd-animate">
-	<div class="col-md-4"></div>
+	<div class="col-md-4 psd-logo-padding"></div>
 	<div class="col-md-4 text-center psd-logo-container">
     <!--[if gte IE 9]>
 		  <a href="http://www.psd401.net/"><img src="/svg/PSD.svg" class="psd-logo"></img></a>
@@ -70,7 +76,7 @@
       <a href="http://www.psd401.net/"><img src="/svg/PSD.svg" class="psd-logo"></img></a>
     <![endif]>
 	</div>
-	<div class="col-md-4"></div>
+	<div class="col-md-4 psd-logo-padding"></div>
 </div>
   
   
