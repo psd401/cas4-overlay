@@ -10,3 +10,7 @@
 .psd-logo {
 	display: none;
 }
+
+.toprow {
+	height: 60px !important;
+}

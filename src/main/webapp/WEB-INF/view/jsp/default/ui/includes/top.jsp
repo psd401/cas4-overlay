@@ -43,7 +43,7 @@
 	<link rel="stylesheet" type="text/css" href="css/desktop.css"></link>
   <!--[if lt IE 9]>
     <link rel="stylesheet" type="text/css" href="css/ieold.css"></link>
-  <[endif]-->
+  <![endif]-->
   
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
@@ -56,7 +56,7 @@
 </head>
 <body class="noselect">
 
-<div class="row hidden-xs psd-animate psd-load-fade-1">
+<div class="row hidden-xs psd-animate psd-load-fade-1 top-row">
 	<div class="col-md-12 psd-title">
 		<span class="psd-title-text">
 			<spring:message code="screen.welcome.instructions" />
