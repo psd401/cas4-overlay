@@ -32,10 +32,10 @@
     </div> <!-- END #container -->
 <%--</nav>--%>
     
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://rawgit.com/aaditmshah/capsLock/master/capsLock.js"></script>
+    <script src="js/capsLock.js"></script>
 	  <script src="js/cas.js" defer="defer"></script>
     
     <%-- 

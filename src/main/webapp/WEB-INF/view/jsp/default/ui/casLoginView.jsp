@@ -67,7 +67,7 @@
     
 		<div class="col-md-4"></div>
 	</div>
-  
+  <!--[if gte IE 9]>
   <div class="row psd-info psd-load-fade-1 psd-animate">
 		<div class="col-xs-4 psd-section-blog psd-load-fade-2">
 			<a href="http://techblog.psd401.net/" target="_blank"><img src="./svg/Blog.svg" class="psd-link-logo psd-animate"></img></a>
@@ -85,7 +85,7 @@
 			<span class="psd-section-desc">Submit a Ticket</span>
 		</div>
 	</div>
-
+	<![endif]-->
 </form:form>
 
 <jsp:directive.include file="includes/bottom.jsp" />

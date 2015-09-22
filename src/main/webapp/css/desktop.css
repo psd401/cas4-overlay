@@ -175,7 +175,7 @@ span {
 
 .psd-title {
 	width: 100% !important;
-	height: 50px;
+	height: 50px !important;
 	text-align: center;
 	display: table;
 	background-color: #2E2E2E;
@@ -233,6 +233,7 @@ span {
 	padding-right: 5%;
 	padding-top: 2%;
 	background-color: rgba(75, 162, 217, 0.1);
+	background-color: #edf6fc;
 	padding-bottom: 2.5%;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -240,6 +241,7 @@ span {
 
 .psd-login-form.error {
 	background-color: rgba(217, 75, 75, 0.1);
+	background-color: #ffdcdc;
 }
 
 .psd-link-logo {
