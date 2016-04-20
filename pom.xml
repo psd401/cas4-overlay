@@ -112,6 +112,12 @@
   	   <version>3.4.11</version>
 	</dependency>
 
+	<dependency>
+  	   <groupId>org.jasig.cas</groupId>
+  	   <artifactId>cas-server-support-saml-googleapps</artifactId>
+  	   <version>${cas.version}</version>
+	</dependency>
+
     </dependencies>
 
     <properties>
