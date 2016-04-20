@@ -88,12 +88,6 @@
         </dependency>
 
         <dependency>
-          <groupId>org.jasig.cas</groupId>
-          <artifactId>cas-server-support-saml</artifactId>
-          <version>${cas.version}</version>
-        </dependency>
-        
-        <dependency>
             <groupId>org.slf4j</groupId>
             <artifactId>slf4j-api</artifactId>
             <version>1.6.4</version>
