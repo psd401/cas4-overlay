@@ -1,0 +1,8 @@
+cas:
+    build: .
+    container_name: cas
+    ports:
+     - 8085:8080
+     - 8445:8443
+    restart: always
+

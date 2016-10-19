@@ -3,17 +3,17 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd ">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>net.unicon</groupId>
-    <artifactId>cas4-overlay</artifactId>
+    <groupId>org.jasig.cas</groupId>
+    <artifactId>cas-overlay</artifactId>
     <packaging>war</packaging>
     <version>1.0</version>
 
     <build>
         <plugins>
             <plugin>
-		 <groupId>com.rimerosolutions.maven.plugins</groupId>
-		 <artifactId>wrapper-maven-plugin</artifactId>
-		 <version>0.0.4</version>
+                <groupId>com.rimerosolutions.maven.plugins</groupId>
+          	<artifactId>wrapper-maven-plugin</artifactId>
+          	<version>0.0.4</version>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -36,10 +36,10 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
-                <version>3.5.1</version>
+                <version>3.3</version>
                 <configuration>
-                    <source>1.8</source>
-                    <target>1.8</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -58,7 +58,10 @@
                         <contextPath>/cas</contextPath>
                         <overrideDescriptor>${basedir}/etc/jetty/web.xml</overrideDescriptor>
                     </webApp>
-                    <jvmArgs>-Xdebug -Xrunjdwp:transport=dt_socket,address=5000,server=y,suspend=n</jvmArgs>
+	                <webAppConfig>
+	                    <allowDuplicateFragmentNames>true</allowDuplicateFragmentNames>
+	                </webAppConfig>
+                    <jvmArgs>-Dlog4j.configurationFile=/etc/cas/log4j2.xml -Xdebug -Xrunjdwp:transport=dt_socket,address=5000,server=y,suspend=n</jvmArgs>
                 </configuration>
             </plugin>
         </plugins>
@@ -74,54 +77,30 @@
             <scope>runtime</scope>
         </dependency>
 
-        <dependency>
-             <groupId>org.jasig.cas</groupId>
-             <artifactId>cas-server-support-ldap</artifactId>
-             <version>${cas.version}</version>
-        </dependency>
-
-        <dependency>
-           <groupId>org.jasig.cas</groupId>
-           <artifactId>cas-server-extension-clearpass</artifactId>
-           <version>${cas.version}</version>
-           <scope>runtime</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-api</artifactId>
-            <version>1.6.4</version>
-        </dependency>
-        
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-log4j12</artifactId>
-            <version>1.6.4</version>
-        </dependency>
-
 	<dependency>
-	    <groupId>org.jasig.cas</groupId>
-            <artifactId>cas-server-support-saml</artifactId>
-            <version>${cas.version}</version>
-            <scope>runtime</scope>
-        </dependency>
-
-	<dependency>
-  	   <groupId>org.jasig.cas</groupId>
-  	   <artifactId>cas-server-support-jdbc</artifactId>
-  	   <version>3.4.11</version>
+	     <groupId>org.jasig.cas</groupId>
+	     <artifactId>cas-server-support-ldap</artifactId>
+	     <version>${cas.version}</version>
 	</dependency>
 
-	<dependency>
-  	   <groupId>org.jasig.cas</groupId>
-  	   <artifactId>cas-server-support-saml-googleapps</artifactId>
-  	   <version>${cas.version}</version>
-	</dependency>
+    <dependency>
+         <groupId>org.jasig.cas</groupId>
+         <artifactId>cas-server-support-ldap-core</artifactId>
+         <version>${cas.version}</version>
+         <type>jar</type>
+         <scope>compile</scope>
+         
+      </dependency>
 
+	<dependency>
+	  <groupId>org.jasig.cas</groupId>
+	  <artifactId>cas-server-support-saml-googleapps</artifactId>
+	  <version>${cas.version}</version>
+	</dependency>
     </dependencies>
 
     <properties>
-        <cas.version>4.2.1</cas.version>
+        <cas.version>4.2.6</cas.version>
         <maven-jetty-plugin.version>9.3.6.v20151106</maven-jetty-plugin.version>
         <maven.compiler.source>1.7</maven.compiler.source>
         <maven.compiler.target>1.7</maven.compiler.target>
@@ -136,6 +115,10 @@
         <repository>
             <id>sonatype-snapshots</id>
             <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
+            <id>shibboleth-releases</id>
+            <url>https://build.shibboleth.net/nexus/content/repositories/releases</url>
         </repository>
     </repositories>
 </project>

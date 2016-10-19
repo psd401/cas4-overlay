@@ -1,18 +1,19 @@
-CAS4 Overlay Template
+CAS Overlay Template
 ============================
 
-Generic CAS maven war overlay to exercise the latest versions of CAS 4.x line. This overlay could be freely used as a starting template for local CAS maven war overlays.
+Generic CAS maven war overlay to exercise the latest versions of CAS. This overlay could be freely used as a starting template for local CAS maven war overlays. The CAS services management overlay is available [here](https://github.com/Jasig/cas-services-management-overlay).
 
 # Versions
 ```xml
-<cas.version>4.2.1</cas.version>
+<cas.version>4.2.x</cas.version>
 ```
 
-# Recommended Requirements
-* JDK 1.8+
+# Requirements
+* JDK 1.7+
 
 # Configuration
-The `etc` directory contains the configuration files that need to be copied to `/cas/etc`.
+
+The `etc` directory contains the configuration files that need to be copied to `/etc/cas`.
 
 Current files are:
 
