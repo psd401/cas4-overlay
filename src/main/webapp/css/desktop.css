@@ -416,7 +416,7 @@ input[type="submit"] {
 .psd-version {
 	color: #ddd;
 	position: absolute;
-	bottom: 20px;
+	margin-bottom: 20px;
 	right: 70px;
 	font-size: 20px;
 }
@@ -445,7 +445,14 @@ html, body {
 	position: relative;
 }
 
-
+#msg {
+	margin-left: 30vw;
+    margin-right: 30vw;
+    padding: 3px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
 
 
 .psd-login-form-input-password {
@@ -470,7 +477,20 @@ html, body {
 	min-height: 200px;
 }
 
+.easter-egg {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 0px;
+	overflow: hidden;
+	right: 15px;
+}
 
+.egg-img {
+	width: 100%;
+	height: 100%;
+	margin-left: 70px;
+}
 
 
 @media only screen and (max-device-width: 320px) {
@@ -587,7 +607,7 @@ html, body {
 }
 
 @media only screen and (max-height: 600px) and (min-width: 540px) {
-	.psd-load-fade-2 {
+	.psd-load-fade-2.psd-section {
 		display: none;
 	}
 }

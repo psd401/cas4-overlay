@@ -19,7 +19,7 @@
 
 --%>
 
-<i class="fa fa-info-circle psd-animate pull-right psd-version" data-placement="bottom" data-toggle="tooltip" title="Central Authentication System (CAS) v4.2.6"></i>
+<i class="fa fa-info-circle psd-animate pull-right psd-version hidden-xs" data-placement="top" data-toggle="tooltip" title="Central Authentication System (CAS) v4.2.6"></i>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 

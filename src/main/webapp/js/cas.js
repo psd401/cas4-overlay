@@ -13,7 +13,7 @@ $(document).ready(function(){
     setTimeout(function(){
         $('.psd-login-submit').tooltip('hide');
         $('.psd-login-forgot').tooltip('hide');
-    }, 7000);
+    }, 10000);
     
     $('.psd-login-submit').click(function(){
       stripEmail();
@@ -57,6 +57,21 @@ $(document).ready(function(){
             }
         });
     }
+
+
+    $(".easter-egg").hover(function(){
+        var randomInt = Math.round(Math.random() * (409 - 100) + 100);
+        $(".egg-img").attr("src", "svg/egg/" + randomInt + ".svg");
+        $(".egg-img").animate({
+            marginLeft: "0px"
+        }, 400);
+    }, function(){
+        $(".egg-img").animate({
+            marginLeft: "70px"
+        }, 400);
+    });
+
+
 });
 
 
