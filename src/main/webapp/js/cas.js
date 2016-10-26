@@ -64,11 +64,11 @@ $(document).ready(function(){
         $(".egg-img").attr("src", "svg/egg/" + randomInt + ".svg");
         $(".egg-img").animate({
             marginLeft: "0px"
-        }, 400);
+        }, 150);
     }, function(){
         $(".egg-img").animate({
             marginLeft: "70px"
-        }, 400);
+        }, 50);
     });
 
 
