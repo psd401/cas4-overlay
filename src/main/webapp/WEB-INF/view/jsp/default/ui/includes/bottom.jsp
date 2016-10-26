@@ -18,6 +18,9 @@
     under the License.
 
 --%>
+
+<i class="fa fa-info-circle psd-animate pull-right psd-version" data-placement="bottom" data-toggle="tooltip" title="Central Authentication System (CAS) v4.2.6"></i>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
       <%--</div> <!-- END #content -->--%>
@@ -44,7 +47,7 @@
     --%>
     
     <spring:theme code="cas.javascript.file" var="casJavascriptFile" text="" />
-    <script type="text/javascript" src="/js/highlights.js"></script>
+    <script type="text/javascript" src="js/highlights.js"></script>
       
       <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -48,7 +48,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="refresh" content="300" />
 	
-  <link rel="icon" href="<c:url value="/favicon.ico" />" type="image/x-icon" />
+  <link rel="icon" href="<c:url value="svg/favicon.ico" />" type="image/x-icon" />
 
   
   <!--[if lt IE 9]>
@@ -62,6 +62,7 @@
 		<span class="psd-title-text">
 			<spring:message code="screen.welcome.instructions" />
 		</span>
+    <i class="fa fa-info-circle psd-animate pull-right psd-version" data-placement="bottom" data-toggle="tooltip" title="Central Authentication System (CAS) v4.2.6"></i>
 	</div> 
 </div>
 <div class="row psd-load-fade-2 psd-animate psd-logo-container">
@@ -74,7 +75,7 @@
       <a href="http://www.psd401.net/"><img src="/svg/PSD.png" class="psd-logo"></img></a>
     <![endif]-->
     <![if !IE]>
-      <a href="http://www.psd401.net/"><img src="/svg/PSD.svg" class="psd-logo"></img></a>
+      <a href="http://www.psd401.net/"><img src="svg/PSD.svg" class="psd-logo psd-animate"></img></a>
     <![endif]>
 	</div>
 	<div class="col-md-4 psd-logo-padding"></div>

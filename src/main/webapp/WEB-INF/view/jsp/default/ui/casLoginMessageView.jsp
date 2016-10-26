@@ -21,17 +21,34 @@
 --%>
 <jsp:directive.include file="includes/top.jsp" />
 
-<div id="msg" class="warn">
-  <h2>Authentication Succeeded with Warnings</h2>
+<div class="row psd-load-fadeup-1 psd-animate">
+    <div class="col-md-4"></div>
 
-<c:forEach items="${messages}" var="message">
-  <p class="message">${message.text}</p>
-</c:forEach>
+    <div class="col-md-4">
+        <div class="psd-login text-center">
+            <div class="psd-login-title">
+                <span class="psd-login-title-text">Hang on a sec</span>
+            </div>
+            
+            
+            <div class="psd-login-form">
+      
+                <div class="psd-login-form-inputs">
+                    <span>
+                        Login was successful, but here's the warning you must see before continuing. 
+                    </span>
+                    <br />
+                    <c:forEach items="${messages}" var="message">
+                      <p class="message">${message.text}</p>
+                    </c:forEach>
 
-</div>
-
-<div id="big-buttons">
- <a class="button" href="login?execution=${flowExecutionKey}&_eventId=proceed">Continue</a>
+                    <div id="big-buttons">
+                        <a class="btn btn-primary" href="login?execution=${flowExecutionKey}&_eventId=proceed">Continue <i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
 </div>
 
 <jsp:directive.include file="includes/bottom.jsp" />

@@ -78,19 +78,24 @@
     <alias name="defaultPrincipalElectionStrategy" alias="principalElectionStrategy" />
     <alias name="tgcCipherExecutor" alias="defaultCookieCipherExecutor" />
     <alias name="ldapPasswordPolicyConfiguration" alias="passwordPolicyConfiguration" />
-    <alias name="optionalWarningAccountStateHandler" alias="passwordPolicyConfiguration" />
  
     <bean id="ldapAuthenticationHandler"
-         class="org.jasig.cas.authentication.LdapAuthenticationHandler"
-         p:principalIdAttribute="sAMAccountName"
-         p:passwordPolicyConfiguration-ref="passwordPolicyConfiguration"
-         c:authenticator-ref="authenticator" >
-         <property name="principalAttributeMap">
-            <map>
-                <entry key="displayName" value="DisplayName" />
-                <entry key="mail" value="mail" />
-                <entry key="memberOf" value="memberOf" />
-            </map>
+       class="org.jasig.cas.authentication.LdapAuthenticationHandler"
+       p:principalIdAttribute="sAMAccountName"
+       p:passwordPolicyConfiguration-ref="passwordPolicyConfiguration"
+       c:authenticator-ref="authenticator" >
+       <property name="principalAttributeMap">
+          <map>
+              <entry key="sAMAccountName" value="uid"/>
+              <entry key="displayName" value="displayName"/>
+              <entry key="mail" value="mail"/>
+              <entry key="memberOf" value="memberOf"/>
+              <entry key="employeeId" value="distinguishedName"/>
+              <entry key="sn" value="sn"/>
+              <entry key="givenName" value="givenName"/>
+              <entry key="telephoneNumber" value="telephoneNumber"/>
+              <entry key="passwordExpired" value="PasswordExpired"/>
+          </map>
         </property>
     </bean>
  
@@ -112,7 +117,6 @@
             validatePeriod="${ldap.pool.validatePeriod}"
             prunePeriod="${ldap.pool.prunePeriod}"
             useSSL="${ldap.use.ssl:false}"
-            subtreeSearch="${ldap.subtree.search:true}"
-            useStartTLS="${ldap.useStartTLS}"
-            usePasswordPolicy="${ldap.usePpolicy:true}" />
+            subtreeSearch="true"
+            useStartTLS="${ldap.useStartTLS}" />
 </beans>

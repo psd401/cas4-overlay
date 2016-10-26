@@ -19,8 +19,25 @@
 
 --%>
 <jsp:directive.include file="includes/top.jsp" />
-  <div id="msg" class="errors">
-    <h2><spring:message code="screen.accountlocked.heading" /></h2>
-    <p><spring:message code="screen.accountlocked.message" /></p>
-  </div>
+
+<div class="row psd-load-fadeup-1 psd-animate">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4">
+        <div class="psd-login text-center">
+            <div class="psd-login-title">
+                <span class="psd-login-title-text"><spring:message code="screen.accountlocked.heading" /></span>
+            </div>
+            
+            
+            <div class="psd-login-form">
+      
+                <div class="psd-login-form-inputs">
+                    <p><spring:message code="screen.accountlocked.message" /></p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
 <jsp:directive.include file="includes/bottom.jsp" />

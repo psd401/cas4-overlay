@@ -19,7 +19,25 @@
 
 --%>
 <jsp:directive.include file="includes/top.jsp" />
-  <div id="msg" class="info">
-    <p><spring:message code="screen.confirmation.message" arguments="${fn:escapeXml(param.service)}${fn:indexOf(param.service, '?') eq -1 ? '?' : '&'}ticket=${serviceTicketId}" /></p>
-  </div>
+
+  <div class="row psd-load-fadeup-1 psd-animate">
+    <div class="col-md-4"></div>
+
+    <div class="col-md-4">
+        <div class="psd-login text-center">
+            <div class="psd-login-title">
+                <span class="psd-login-title-text">Confirm</span>
+            </div>
+            
+            
+            <div class="psd-login-form">
+      
+                <div class="psd-login-form-inputs">
+                    <p><spring:message code="screen.confirmation.message" arguments="${fn:escapeXml(param.service)}${fn:indexOf(param.service, '?') eq -1 ? '?' : '&'}ticket=${serviceTicketId}" /></p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
 <jsp:directive.include file="includes/bottom.jsp" />
