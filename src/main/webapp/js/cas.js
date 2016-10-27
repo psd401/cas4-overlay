@@ -65,6 +65,7 @@ $(document).ready(function(){
         $(".egg-img").animate({
             marginLeft: "0px"
         }, 150);
+        ga('send', 'event', 'fun_hover');
     }, function(){
         $(".egg-img").animate({
             marginLeft: "70px"

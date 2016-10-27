@@ -63,7 +63,7 @@
 			<spring:message code="screen.welcome.instructions" />
 		</span>
     <div class="easter-egg">
-      <img class="egg-img"></img>
+      <img class="egg-img" alt="Easter Egg"></img>
     </div>
 	</div> 
 </div>
