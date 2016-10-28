@@ -47,7 +47,7 @@
             <AppenderRef ref="perfFileAppender"/>
         </AsyncLogger>
 
-        <AsyncLogger name="org.jasig.cas.web.flow" level="info" additivity="true" includeLocation="true">
+        <AsyncLogger name="org.jasig.cas.web.flow" level="debug" additivity="true" includeLocation="true">
             <AppenderRef ref="file"/>
         </AsyncLogger>
         <AsyncLogger name="org.jasig.inspektr.audit.support" level="info" includeLocation="true">
@@ -57,9 +57,13 @@
         <AsyncRoot level="error">
             <AppenderRef ref="console"/>
         </AsyncRoot>
-	<Logger name="org.ldaptive" level="debug" additivity="false">
-    		<AppenderRef ref="console"/>
-    		<AppenderRef ref="file"/>
-	</Logger>
+    	<Logger name="org.ldaptive" level="debug" additivity="false">
+        		<AppenderRef ref="console"/>
+        		<AppenderRef ref="file"/>
+    	</Logger>
+        <Logger name="org.eclipse.jetty.util.log.Slf4jLog" level="debug" additivity="false">
+                <AppenderRef ref="console"/>
+                <AppenderRef ref="file"/>
+        </Logger>
     </Loggers>
 </Configuration>

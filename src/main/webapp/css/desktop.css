@@ -480,11 +480,11 @@ html, body {
 
 .easter-egg {
 	position: absolute;
-	width: 70px;
+	width: 50px;
 	height: 65px;
-	top: 0px;
+	bottom: 0px;
 	overflow: hidden;
-	right: 15px;
+	left: 1px;
 }
 
 .egg-img {
