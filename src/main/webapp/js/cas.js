@@ -74,7 +74,14 @@ $(document).ready(function(){
         }, 80);
     });
 
+    $(".change-pass").attr({
+        href: $(".change-pass").attr("href") + "?service=" + encodeURIComponent(window.location)
+    });
 
+    $(".forgot-btn").attr({
+        href: $(".forgot-btn").attr("href") + "?service=" + encodeURIComponent(window.location)
+    });
+    
 });
 
 

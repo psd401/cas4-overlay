@@ -20,7 +20,7 @@
 --%>
 
 <div class="easter-egg">
-  <img class="egg-img" alt="Easter Egg"></img>
+  <img class="egg-img" style="opacity: 0;"></img>
 </div>
 
 <i class="fa fa-info-circle psd-animate pull-right psd-version hidden-xs" data-placement="top" data-toggle="tooltip" title="Central Authentication System (CAS) v4.2.6"></i>
