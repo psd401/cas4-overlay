@@ -511,10 +511,6 @@ html, body {
 
 @media only screen and (min-width: 320px) and (max-width: 540px) {
 	
-	.psd-load-fade-2 {
-		min-height: 170px;
-	}
-	
 	.psd-login {
 		width: 90%;
 		margin-right: 5%;
