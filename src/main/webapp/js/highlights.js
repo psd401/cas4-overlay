@@ -22,9 +22,9 @@ $(document).ready(function(){
     $("input:visible:enabled:first").focus();
     //flash error box
     
-    if($('#msg.errors').length > 0){
+    if($('div[id^=".error"]').length > 0){
     
-        $('#msg.errors').animate({ backgroundColor: 'rgb(75, 162, 217)' }, 30).animate({ backgroundColor: 'rgb(217, 75, 75)' }, 500);
+        $('div[id^=".error"]').animate({ backgroundColor: 'rgb(75, 162, 217)' }, 30).animate({ backgroundColor: 'rgb(217, 75, 75)' }, 500);
         $('.psd-login-title').css({ "border-bottom": '5px solid #d94b4b'});
         
         $(".psd-login-form").addClass("error");
@@ -32,7 +32,7 @@ $(document).ready(function(){
     }
     
     //flash success box
-    $('#msg.success').animate({ backgroundColor: 'rgb(51,204,0)' }, 30).animate({ backgroundColor: 'rgb(221,255,170)' }, 500);
+    $('#msg.success').animate({ backgroundColor: '#4cd964' }, 30).animate({ backgroundColor: 'rgb(221,255,170)' }, 500);
     
     //flash confirm box
     $('#msg.question').animate({ backgroundColor: 'rgb(51,204,0)' }, 30).animate({ backgroundColor: 'rgb(221,255,170)' }, 500);
