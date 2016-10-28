@@ -29,7 +29,7 @@ RUN cd / \
     && mkdir /etc/cas/jetty \
     && mkdir -p cas-overlay/bin \
     && mkdir -p cas-overlay/src/main/webapp \
-    && cp cas-overlay/etc/*.* /etc/cas;
+    && cp -R cas-overlay/etc/* /etc/cas;
 
 
 ENV JAVA_HOME /opt/jre-home

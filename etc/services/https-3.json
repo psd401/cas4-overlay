@@ -1,0 +1,7 @@
+{
+  "@class" : "org.jasig.cas.services.RegexRegisteredService",
+  "serviceId" : "^(https|imaps)://.*",
+  "name" : "https",
+  "id" : 3,
+  "evaluationOrder" : 0
+}
