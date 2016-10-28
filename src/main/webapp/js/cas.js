@@ -36,7 +36,7 @@ $(document).ready(function(){
     
     if($(".logout-success").length > 0) {
         var timer = 10;
-	    var redirect = location.search.split('service=')[1] ? "/login?service=" + location.search.split('service=')[1] : '/login?service=http%3A%2F%2Fmy.psd401.net';
+	    var redirect = location.search.split('service=')[1] ? "/login?service=" + location.search.split('service=')[1] : '/login?service=https%3A%2F%2Fmy.psd401.net';
         console.log("Redirecting to " + redirect);
         $(".logout-success").attr("href", redirect);
         setInterval(function(){
@@ -63,12 +63,14 @@ $(document).ready(function(){
         var randomInt = Math.round(Math.random() * (405 - 100) + 100);
         $(".egg-img").attr("src", "svg/egg/" + randomInt + ".svg");
         $(".egg-img").animate({
-            marginRight: "0px"
+            marginLeft: "0px",
+            opacity: 1
         }, 200);
         ga('send', 'event', 'fun_hover');
     }, function(){
         $(".egg-img").animate({
-            marginRight: "70px"
+            marginLeft: "-70px",
+            opacity: 0
         }, 80);
     });
 

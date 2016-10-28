@@ -32,7 +32,7 @@ $(document).ready(function(){
     }
     
     //flash success box
-    $('#msg.success').animate({ backgroundColor: '#4cd964' }, 30).animate({ backgroundColor: 'rgb(221,255,170)' }, 500);
+    $('#msg.success').animate({ backgroundColor: '#0e4a18' }, 30).animate({ backgroundColor: '#4cd964' }, 500);
     
     //flash confirm box
     $('#msg.question').animate({ backgroundColor: 'rgb(51,204,0)' }, 30).animate({ backgroundColor: 'rgb(221,255,170)' }, 500);
