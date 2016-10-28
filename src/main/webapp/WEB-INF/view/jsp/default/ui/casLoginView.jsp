@@ -19,14 +19,14 @@
 
 --%>
 <jsp:directive.include file="includes/top.jsp" />
-
+<%--
 <c:if test="${not pageContext.request.secure}">
   <div id="msg" class="errors">
     <h2>Non-secure Connection</h2>
     <p>You are currently accessing the logon server over a non-secure connection.  Single Sign On WILL NOT WORK.  In order to have single sign on work, you MUST log in over HTTPS.</p>
   </div>
 </c:if>
-
+--%>
 
 <form:form class="form-signin" role="form" method="post" id="fm1" commandName="${commandName}" htmlEscape="true" name="login">
 <spring:message code="screen.welcome.label.netid.accesskey" var="userNameAccessKey" />
@@ -46,7 +46,7 @@
 					<span class="hidden-xs psd-login-title-text">Sign in</span>
 					<span class="visible-xs hidden-sm hidden-md psd-login-title-text"><spring:message code="screen.welcome.instructions" /></span>
 				</div>
-        		<form:errors path="*" id="msg" cssClass="errors form-invalid" element="div" htmlEscape="false" />
+        		<form:errors path="*" cssClass="errors form-invalid" element="div" htmlEscape="false" />
 				<div class="psd-login-form">
           
 					<div class="psd-login-form-inputs">
