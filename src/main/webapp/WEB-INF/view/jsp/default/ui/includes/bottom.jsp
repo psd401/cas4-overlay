@@ -19,6 +19,10 @@
 
 --%>
 
+<div class="easter-egg">
+  <img class="egg-img" alt="Easter Egg"></img>
+</div>
+
 <i class="fa fa-info-circle psd-animate pull-right psd-version hidden-xs" data-placement="top" data-toggle="tooltip" title="Central Authentication System (CAS) v4.2.6"></i>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>

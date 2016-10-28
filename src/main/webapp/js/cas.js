@@ -60,7 +60,7 @@ $(document).ready(function(){
 
 
     $(".easter-egg").hover(function(){
-        var randomInt = Math.round(Math.random() * (409 - 100) + 100);
+        var randomInt = Math.round(Math.random() * (405 - 100) + 100);
         $(".egg-img").attr("src", "svg/egg/" + randomInt + ".svg");
         $(".egg-img").animate({
             marginLeft: "0px"

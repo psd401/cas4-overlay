@@ -62,9 +62,6 @@
 		<span class="psd-title-text">
 			<spring:message code="screen.welcome.instructions" />
 		</span>
-    <div class="easter-egg">
-      <img class="egg-img" alt="Easter Egg"></img>
-    </div>
 	</div> 
 </div>
 <div class="row psd-load-fade-2 psd-animate psd-logo-container">
