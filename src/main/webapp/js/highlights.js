@@ -22,9 +22,9 @@ $(document).ready(function(){
     $("input:visible:enabled:first").focus();
     //flash error box
     
-    if($('div[id^=".error"]').length > 0){
+    if($('div[id*=".error"]').length > 0){
     
-        $('div[id^=".error"]').animate({ backgroundColor: 'rgb(75, 162, 217)' }, 30).animate({ backgroundColor: 'rgb(217, 75, 75)' }, 500);
+        $('div[id*=".error"]').animate({ backgroundColor: 'rgb(75, 162, 217)' }, 30).animate({ backgroundColor: 'rgb(217, 75, 75)' }, 500);
         $('.psd-login-title').css({ "border-bottom": '5px solid #d94b4b'});
         
         $(".psd-login-form").addClass("error");

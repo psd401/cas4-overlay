@@ -455,6 +455,9 @@ html, body {
     margin-bottom: 10px;
 }
 
+#msg.errors {
+	background-color: #d94b4b;
+}
 
 .psd-login-form-input-password {
 	display: block !important;
@@ -479,7 +482,7 @@ html, body {
 }
 
 .easter-egg {
-	position: absolute;
+	position: fixed;
 	width: 50px;
 	height: 65px;
 	bottom: 0px;
@@ -490,7 +493,7 @@ html, body {
 .egg-img {
 	width: 100%;
 	height: 100%;
-	margin-left: 70px;
+	margin-right: 70px;
 }
 
 

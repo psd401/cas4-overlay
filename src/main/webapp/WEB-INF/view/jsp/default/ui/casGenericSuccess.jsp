@@ -34,7 +34,7 @@
 			</div>
       <div class="psd-login-form">
         <p class="text-center">
-          <a href="http://my.psd401.net" class="btn btn-lg btn-primary">Visit the portal</a>
+          <a href="https://my.psd401.net" class="btn btn-lg btn-primary">Visit the portal</a>
           <a href="/logout" class="btn btn-lg btn-danger">Logout</a>
         </p>
       </div>

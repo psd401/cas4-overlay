@@ -63,13 +63,13 @@ $(document).ready(function(){
         var randomInt = Math.round(Math.random() * (405 - 100) + 100);
         $(".egg-img").attr("src", "svg/egg/" + randomInt + ".svg");
         $(".egg-img").animate({
-            marginLeft: "0px"
-        }, 150);
+            marginRight: "0px"
+        }, 200);
         ga('send', 'event', 'fun_hover');
     }, function(){
         $(".egg-img").animate({
-            marginLeft: "70px"
-        }, 50);
+            marginRight: "70px"
+        }, 80);
     });
 
 
