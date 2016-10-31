@@ -3,5 +3,18 @@
   "serviceId" : "^(https|imaps)://.*",
   "name" : "https",
   "id" : 3,
-  "evaluationOrder" : 0
+  "evaluationOrder" : 0,
+  "attributeReleasePolicy" : {
+    "@class" : "org.jasig.cas.services.ReturnAllowedAttributeReleasePolicy",
+    "principalAttributesRepository" : {
+      "@class" : "org.jasig.cas.authentication.principal.DefaultPrincipalAttributesRepository"
+    },
+    "authorizedToReleaseCredentialPassword" : false,
+    "authorizedToReleaseProxyGrantingTicket" : true
+  },
+  "publicKey" : {
+    "@class" : "org.jasig.cas.services.RegisteredServicePublicKeyImpl",
+    "location" : "/etc/cas/private.key",
+    "algorithm" : "RSA"
+  }
 }
