@@ -18,7 +18,7 @@ $(document).ready(function(){
 
     $('.psd-login-submit').click(function(){
       stripEmail();
-      Cookies.set("iForgotUsername", $("#username").value(), {domain: 'psd401.net'});
+      Cookies.set("iForgotUsername", $("#username").val(), {domain: 'psd401.net'});
       $('form[name=login]').submit();
     });
 
@@ -32,7 +32,7 @@ $(document).ready(function(){
         if (event.which == 13) {
             event.preventDefault();
             stripEmail();
-            Cookies.set("iForgotUsername", $("#username").value(), {domain: 'psd401.net'});
+            Cookies.set("iForgotUsername", $("#username").val(), {domain: 'psd401.net'});
             $("form[name=login]").submit();
         }
     });
