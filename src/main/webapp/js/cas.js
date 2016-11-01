@@ -3,6 +3,7 @@ var screwIE=Math.floor(Math.random()*100001);
 
 $(document).ready(function(){
 	//populateRSSFeeds.init();
+
     $('[data-toggle="tooltip"]').tooltip();
 
     setTimeout(function(){
@@ -17,6 +18,7 @@ $(document).ready(function(){
 
     $('.psd-login-submit').click(function(){
       stripEmail();
+      Cookies.set("iForgotUsername", $("#username").value(), {domain: 'psd401.net'});
       $('form[name=login]').submit();
     });
 
@@ -37,7 +39,8 @@ $(document).ready(function(){
 
     if($(".logout-success").length > 0) {
         var timer = 10;
-	    var redirect = location.search.split('service=')[1] ? "/login?service=" + location.search.split('service=')[1] : '/login?service=https%3A%2F%2Fmy.psd401.net%2f';
+        Cookies.remove("iForgotUsername", {domain: 'psd401.net'});
+	      var redirect = location.search.split('service=')[1] ? "/login?service=" + location.search.split('service=')[1] : '/login?service=https%3A%2F%2Fmy.psd401.net%2f';
         console.log("Redirecting to " + redirect);
         $(".logout-success").attr("href", redirect);
         setInterval(function(){
