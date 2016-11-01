@@ -4,39 +4,40 @@ var screwIE=Math.floor(Math.random()*100001);
 $(document).ready(function(){
 	//populateRSSFeeds.init();
     $('[data-toggle="tooltip"]').tooltip();
-    
+
     setTimeout(function(){
         $('.psd-login-submit').tooltip('show');
         $('.psd-login-forgot').tooltip('show');
     }, 1200);
-    
+
     setTimeout(function(){
         $('.psd-login-submit').tooltip('hide');
         $('.psd-login-forgot').tooltip('hide');
     }, 10000);
-    
+
     $('.psd-login-submit').click(function(){
       stripEmail();
       $('form[name=login]').submit();
     });
-    
+
     $(".psd-login-form-input").keypress(function(event){
         if(event.which == 13){
             $(".psd-login-form-input-password").focus();
         }
     });
-    
+
     $(".psd-login-form-input-password").keypress(function(event) {
         if (event.which == 13) {
             event.preventDefault();
             stripEmail();
+            Cookies.set("iForgotUsername", $("#username").value(), {domain: 'psd401.net'});
             $("form[name=login]").submit();
         }
     });
-    
+
     if($(".logout-success").length > 0) {
         var timer = 10;
-	    var redirect = location.search.split('service=')[1] ? "/login?service=" + location.search.split('service=')[1] : '/login?service=https%3A%2F%2Fmy.psd401.net';
+	    var redirect = location.search.split('service=')[1] ? "/login?service=" + location.search.split('service=')[1] : '/login?service=https%3A%2F%2Fmy.psd401.net%2f';
         console.log("Redirecting to " + redirect);
         $(".logout-success").attr("href", redirect);
         setInterval(function(){
@@ -47,7 +48,7 @@ $(document).ready(function(){
             timer --;
         }, 1000);
     }
-    
+
     if(capsLock){
         capsLock.observe(function (status) {
             if(status){
@@ -81,7 +82,7 @@ $(document).ready(function(){
     $(".forgot-btn").attr({
         href: $(".forgot-btn").attr("href") + "?service=" + encodeURIComponent(window.location)
     });
-    
+
 });
 
 

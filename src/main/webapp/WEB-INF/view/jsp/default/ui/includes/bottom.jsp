@@ -38,18 +38,19 @@
 
     </div> <!-- END #container -->
 <%--</nav>--%>
-    
+
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/js.cookie.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/capsLock.js"></script>
 	  <script src="js/cas.js" defer="defer"></script>
-    
-    <%-- 
-        JavaScript Debug: A simple wrapper for console.log 
+
+    <%--
+        JavaScript Debug: A simple wrapper for console.log
         See this link for more info: http://benalman.com/projects/javascript-debug-console-log/
     --%>
-    
+
     <spring:theme code="cas.javascript.file" var="casJavascriptFile" text="" />
     <script type="text/javascript" src="js/highlights.js"></script>
     <script>
@@ -64,4 +65,3 @@
     </script>
   </body>
 </html>
-
