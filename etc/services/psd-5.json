@@ -1,6 +1,6 @@
 {
   "@class" : "org.jasig.cas.services.RegexRegisteredService",
-  "serviceId" : "^(https|http)://*.psd401.net*",
+  "serviceId" : "^(https|http)://*.psd401.net.*",
   "name" : "psd",
   "id" : 5,
   "evaluationOrder" : 0
