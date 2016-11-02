@@ -1,0 +1,8 @@
+{
+  "@class" : "org.jasig.cas.services.RegexRegisteredService",
+  "serviceId" : "http://my.psd401.net/.*",
+  "name" : "my",
+  "id" : 6,
+  "evaluationOrder" : 0
+}
+
