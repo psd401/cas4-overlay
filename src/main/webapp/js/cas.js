@@ -18,7 +18,11 @@ $(document).ready(function(){
 
     $('.psd-login-submit').click(function(){
       stripEmail();
-      Cookies.set("iForgotUsername", $("#username").val(), {domain: 'psd401.net'});
+      ga('send', 'event', 'login_click');
+      var date = new Date();
+      var minutes = 30;
+      date.setTime(date.getTime() + (minutes * 60 * 1000));
+      Cookies.set("iForgotUsername", $("#username").val(), {domain: 'psd401.net', expires: date});
       $('form[name=login]').submit();
     });
 
@@ -32,7 +36,11 @@ $(document).ready(function(){
         if (event.which == 13) {
             event.preventDefault();
             stripEmail();
-            Cookies.set("iForgotUsername", $("#username").val(), {domain: 'psd401.net'});
+            ga('send', 'event', 'login_enter');
+            var date = new Date();
+            var minutes = 30;
+            date.setTime(date.getTime() + (minutes * 60 * 1000));
+            Cookies.set("iForgotUsername", $("#username").val(), {domain: 'psd401.net', expres: date});
             $("form[name=login]").submit();
         }
     });
@@ -79,7 +87,7 @@ $(document).ready(function(){
     });
 
     $(".easter-egg").click(function(){
-      ga('send', 'event', 'fun_click', randomEgg);
+      ga('send', 'event', 'fun_click', {'svg': randomEgg});
     });
 
     $(".change-pass").attr({
