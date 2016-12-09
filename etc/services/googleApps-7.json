@@ -1,0 +1,7 @@
+{
+  "@class" : "org.jasig.cas.services.RegexRegisteredService",
+  "serviceId" : "https://www.google.com/a/edtools.psd401.net/acs",
+  "name" : "googleApps",
+  "id" : 7,
+  "evaluationOrder" : 10
+}
