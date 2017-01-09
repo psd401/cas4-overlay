@@ -34,7 +34,7 @@
     0% {
 		opacity: 0;
 		-moz-transform: scale(2.2);
-	}f
+	}
     100% {
 		opacity: 1;
 		-moz-transform: scale(2.5);

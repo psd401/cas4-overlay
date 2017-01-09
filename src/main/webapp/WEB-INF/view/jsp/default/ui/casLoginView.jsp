@@ -36,10 +36,11 @@
 <input type="hidden" name="execution" value="${flowExecutionKey}" />
 <input type="hidden" name="_eventId" value="submit" />
 
+<script src="https://ssl.gstatic.com/accounts/chrome/users-1.0.js"></script>
 
 <div class="row psd-load-fadeup-1 psd-animate">
 		<div class="col-md-4"></div>
-    
+
 		<div class="col-md-4">
 			<div class="psd-login text-center">
 				<div class="psd-login-title">
@@ -48,24 +49,24 @@
 				</div>
         		<form:errors path="*" cssClass="errors form-invalid" element="div" htmlEscape="false" />
 				<div class="psd-login-form">
-          
+
 					<div class="psd-login-form-inputs">
             <form:input cssClass="required form-control psd-login-form-input input-lg" cssErrorClass="error" placeholder="Username" id="username" tabindex="1" accesskey="${userNameAccessKey}"  autocapitalize="off"
                 autocorrect="off" path="username" autocomplete="off" htmlEscape="true" />
 
             <form:password cssClass="required form-control psd-login-form-input-password input-lg" cssErrorClass="error" placeholder="Password" id="password" tabindex="2" path="password"  accesskey="${passwordAccessKey}" htmlEscape="true" autocomplete="off" data-placement="right" data-trigger="manual" data-toggle="tooltip" title="Caps Lock!" />
 					  <a href="https://iforgot.psd401.net/forgot" class="forgot-btn"><i class="fa fa-question-circle psd-login-forgot psd-animate" data-placement="bottom" data-toggle="tooltip" title="Forgot your password?"></i></a>
-            
+
 					  <i class="fa fa-arrow-circle-right psd-login-submit psd-animate" data-placement="bottom" data-toggle="tooltip" title="Log in."></i>
-            
-            			<!--[if IE 7]>
+
+            <!--[if IE]>
 							<input class="btn-submit btn btn-primary" name="submit" accesskey="l" value="<spring:message code="screen.welcome.button.login" />" tabindex="4" type="submit" />
 						<![endif]-->
 					</div>
 				</div>
 			</div>
-		</div>	
-    
+		</div>
+
 		<div class="col-md-4"></div>
 	</div>
   <![if !IE]>
@@ -74,13 +75,13 @@
 			<a href="http://techblog.psd401.net/" target="_blank"><img src="./svg/Blog.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Visit the Tech Blog</span>
 		</div>
-		
+
 
 		<div class="col-xs-4 psd-section psd-section-tweet psd-load-fade-2">
 			<a href="https://twitter.com/psd401" target="_blank"><img src="./svg/Twitter.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Tweet Us @psd401</span>
 		</div>
-		
+
 		<div class="col-xs-4 psd-section psd-section-ticket psd-load-fade-2">
 			<a href="http://workorders.psd401.net/" target="_blank"><img src="./svg/Ticket.svg" class="psd-link-logo psd-animate"></img></a>
 			<span class="psd-section-desc">Submit a Ticket</span>

@@ -72,7 +72,7 @@ $(document).ready(function(){
 
     var randomEgg = 100;
     $(".easter-egg").hover(function(){
-        var randomEgg = Math.round(Math.random() * (644 - 100) + 100);
+        var randomEgg = Math.round(Math.random() * (638 - 100) + 100);
         $(".egg-img").attr("src", "svg/egg/" + randomEgg + ".svg");
         $(".egg-img").animate({
             marginLeft: "0px",

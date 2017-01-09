@@ -32,7 +32,7 @@
   <meta charset="UTF-8" />
 
   <title>PSD Login</title>
-  
+
   <%--<spring:theme code="standard.custom.css.file" var="customCssFile" />--%>
   <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/bootstrap.min.css" >
@@ -41,22 +41,22 @@
     <link rel="stylesheet" href="css/font-awesome-ie7.css"></link>
    <![endif]-->
 	<link rel="stylesheet" type="text/css" href="css/desktop.css"></link>
-  <!--[if lt IE 9]>
+  <!--[if lt IE 11]>
     <link rel="stylesheet" type="text/css" href="css/ieold.css"></link>
   <![endif]-->
-  
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<meta http-equiv="refresh" content="300" />
-	
+
   <meta http-equiv="cache-control" content="max-age=0" />
   <meta http-equiv="cache-control" content="no-cache" />
   <meta http-equiv="expires" content="0" />
   <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
   <meta http-equiv="pragma" content="no-cache" />
-  
+
   <link rel="icon" href="<c:url value="svg/favicon.ico" />" type="image/x-icon" />
 
-  
+
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js" type="text/javascript"></script>
   <![endif]-->
@@ -68,7 +68,7 @@
 		<span class="psd-title-text">
 			<spring:message code="screen.welcome.instructions" />
 		</span>
-	</div> 
+	</div>
 </div>
 <div class="row psd-load-fade-2 psd-animate psd-logo-container">
 	<div class="col-md-4 psd-logo-padding"></div>
@@ -85,9 +85,9 @@
 	</div>
 	<div class="col-md-4 psd-logo-padding"></div>
 </div>
-  
-  
-  
+
+
+
 <!--
 <%--<nav class="navbar navbar-default" role="navigation">--%>
 
